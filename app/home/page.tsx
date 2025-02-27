@@ -1,6 +1,4 @@
-import Button from "@/components/button";
 import FreeTrial from "@/layout/intro";
-import Navbar from "@/layout/navbar";
 import Link from "next/link";
 
 function HomePage() {

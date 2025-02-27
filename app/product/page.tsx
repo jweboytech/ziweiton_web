@@ -1,6 +1,5 @@
 "use client";
 
-import Button from "@/components/button";
 import FreeTrial from "@/layout/intro";
 import Section from "@/layout/section";
 import clsx from "clsx";
@@ -13,7 +12,7 @@ const tabs: Option[] = [
   { label: "零售连锁", value: "零售连锁" },
 ];
 
-const items: any[] = [
+const items: { icon: string; title: string; description: string }[] = [
   {
     icon: "xx",
     title: "人员流动性高",
