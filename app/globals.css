@@ -17,8 +17,26 @@
   }
 }
 
+@theme {
+  --color-primary: #365ff5;
+  --color-black: #333;
+  --color-black-dark: #2c2c2c;
+  --color-gray: #636a7d;
+  --color-gray-light: #e5e5e5;
+  --color-gray-dark: #9f9f9f;
+  --color-blue: #375ff4;
+  --color-blue-light: #f1f4fe;
+  --color-warning: #ffca4c;
+
+  --text-20: 20px;
+  --text-28: 28px;
+
+  /* margin */
+  --inset-shadow-card: 0px 0px 10px 3px #ecf0fb;
+}
+
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-black);
+  background: #f1f4fe;
+  font-family: Source Han Sans CN;
 }
