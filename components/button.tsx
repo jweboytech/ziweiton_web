@@ -7,6 +7,7 @@ const Button = ({ children, href }: BaseProps & { href?: string }) => {
       {children}
     </div>
   );
+
   if (href) {
     return (
       <Link href={href}>
