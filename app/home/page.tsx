@@ -1,135 +1,65 @@
+import Button from "@/components/button";
+import Title from "@/components/title";
 import FreeTrial from "@/layout/intro";
 import Link from "next/link";
 
+const items: Array<Option & { icon: string }> = [
+  {
+    label: "资深团队",
+    value: "深根资产云管理领域xx年，平均从业经验xx年。",
+    icon: "",
+  },
+  {
+    label: "行业经验丰富",
+    value: "具有全行业全场景解决方案服务经验，覆盖互联网、制造业、零售等行业。",
+    icon: "",
+  },
+  {
+    label: "贴心部署",
+    value: "管家式实施部署，助力无忧上线助力企业快速实现资产管理数智化。",
+    icon: "",
+  },
+  {
+    label: "售后无忧",
+    value: "专业售后团队7*24支持，快速响应，为您的资管保驾护航。",
+    icon: "",
+  },
+];
+
 function HomePage() {
   return (
-    <div className="bg-[#F1F4FE] flex-grow">
-      <div className="py-6">
-        <h2 className="text-center text-28">资产数字化平台版本对比</h2>
-      </div>
-      <div className="grid grid-cols-2 h-[504px]">
-        <div className="bg-white relative">
-          <div className="absolute left-40 top-20 z-10">
-            <h3 className="text-28 mb-10">资产数智化平台核心解决方案</h3>
-            <div className="bg-gray-light w-[616px] h-[250px]" />
+    <div>
+      <div className="pt-50 pb-15">
+        <div className="flex flex-col gap-6">
+          <h2 className="text-[#0C1E58] text-40 text-center">
+            紫维通·专业资产管理云平台
+          </h2>
+          <h3 className="text-gray text-22 text-center">
+            实现资产数智化、精细化、全生命周期管理
+          </h3>
+          <div className="mt-6 text-center">
+            <Button href="/product">查看产品介绍</Button>
           </div>
         </div>
-        <div className="bg-blue relative">
-          <div className="absolute left-16 top-50">
-            <h3 className="text-white text-20 relative mb-5">
-              贵重资产定位防丢失
-            </h3>
-            <ul className="text-white list-disc flex flex-col gap-2">
-              <li className="inline-flex gap-2 items-center">
-                <div className="bg-warning w-2 h-2 rounded-full text-sm" />
-                <span>通过定位技术，5监管提供技术支持。 系统实时监控资产</span>
-              </li>
-              <li className="inline-flex gap-2 items-center">
-                <div className="bg-warning w-2 h-2 rounded-full text-sm" />
-                <span>
-                  设置电子围栏，当资产离开指定区域时，系统会自动报警，
-                  提醒管理人员注意。
-                </span>
-              </li>
-              <li className="inline-flex gap-2 items-center">
-                <div className="bg-warning w-2 h-2 rounded-full text-sm" />
-                <span>
-                  系统实时监控资产的位置，记录资产的历史移动轨迹，方便
-                  管理人员进行回溯和查询。
-                </span>
-              </li>
-            </ul>
-          </div>
+        <div className="flex flex-col items-center gap-26 mt-53.5">
+          <Title text="专业服务 助力资管降本提效" />
+          <div>Placeholder</div>
+          <Button href="/prescription">查看解决方案</Button>
         </div>
       </div>
-      <div className="py-10 px-32">
-        <div className="flex gap-20 justify-center">
-          <div className="flex flex-col gap-10">
-            <h3 className="text-20 relative mb-5">
-              多种盘点方式 极大提升盘点效率
-            </h3>
-            <ul className="flex flex-col gap-2">
-              <li className="inline-flex gap-2 items-center">
-                <div className="bg-blue w-2 h-2 rounded-full text-sm" />
-                <span>支持全员盘点，扫码盘点，异地盘点，RFID盘点。</span>
-              </li>
-              <li className="inline-flex gap-2 items-center">
-                <div className="bg-blue w-2 h-2 rounded-full text-sm" />
-                <span>支持按照资产类别、按角色权限进行多维度盘点。</span>
-              </li>
-              <li className="inline-flex gap-2 items-center">
-                <div className="bg-blue w-2 h-2 rounded-full text-sm" />
-                <span>盘点结果一键自动生成。 </span>
-              </li>
-            </ul>
-          </div>
-          <div className="bg-gray-dark w-[616px] h-[250px]" />
-        </div>
-      </div>
-      <div className="py-10 px-32 bg-white">
-        <div className="flex gap-10 justify-center">
-          <div className="bg-gray-dark w-[616px] h-[250px]" />
-          <div className="flex flex-col gap-6">
-            <h3 className="text-20 relative mb-5">固定资产全生命周期管理</h3>
-            <ul className="flex flex-col gap-2">
-              <li className="inline-flex gap-2 items-center">
-                <div className="bg-warning w-2 h-2 rounded-full text-sm" />
-                <span>
-                  实现资产、设备从采购、入库、领用、归还、调拨、借用、维护、
-                </span>
-              </li>
-              <li className="inline-flex gap-2 items-center">
-                <div className="bg-warning w-2 h-2 rounded-full text-sm" />
-                <span>维修、盘点、折旧及报废等各个环节的全生命周期管理。</span>
-              </li>
-              <li className="inline-flex gap-2 items-center">
-                <div className="bg-warning w-2 h-2 rounded-full text-sm" />
-                <span>支持历史资产数据批量导入，同时也支持导出数据。 </span>
-              </li>
-              <li className="inline-flex gap-2 items-center">
-                <div className="bg-warning w-2 h-2 rounded-full text-sm" />
-                <span>
-                  多平台支持，如微信、钉钉、飞书，同时支持一键导入组织架构。
-                </span>
-              </li>
-              <li className="inline-flex gap-2 items-center">
-                <div className="bg-warning w-2 h-2 rounded-full text-sm" />
-                <span>支持资产标签自定义。 </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div className="py-10 px-32">
-        <div className="flex gap-20 justify-center">
-          <div className="flex flex-col gap-10">
-            <h3 className="text-20 relative mb-5">资产数据智能分析</h3>
-            <ul className="flex flex-col gap-2">
-              <li className="inline-flex gap-2 items-start">
-                <div className="bg-blue w-2 h-2 rounded-full text-sm mt-[6px]" />
-                <span>资产数据实时更新，方便掌握最新动态。</span>
-              </li>
-              <li className="inline-flex gap-2 items-start">
-                <div className="bg-blue w-2 h-2 rounded-full text-sm mt-[6px]" />
-                <span>
-                  台账清晰、记录完整，企业资产情况一目了然，快速定位闲置资产，维护、折旧成本实时掌握。
-                </span>
-              </li>
-              <li className="inline-flex gap-2 items-start">
-                <div className="bg-blue w-2 h-2 rounded-full text-sm mt-[6px]" />
-                <span>
-                  数据查阅范围支持自定义角色权限，保证资产管理信息安全，避免未经授权的操作。{" "}
-                </span>
-              </li>
-            </ul>
-          </div>
-          <div className="bg-gray-dark w-[616px] h-[250px]" />
-        </div>
-      </div>
-      <div className="bg-primary text-white text-base text-center">
-        <Link href="/prescription" className="py-8 block">
-          查看解决方案
-        </Link>
+      <div className="pt-19 h-[346px] px-56 bg-primary relative">
+        <Title text="专业团队 技术驱动" className="text-white" />
+        <ul className="flex gap-4 absolute top-43 left-1/2 -translate-x-1/2">
+          {items.map((item, index) => (
+            <li
+              className="bg-white rounded inset-shadow-card py-11.5 px-7.5 w-63"
+              key={index}
+            >
+              <h4 className="text-20">{item.label}</h4>
+              <p className="text-sm text-gray mt-3">{item.value}</p>
+            </li>
+          ))}
+        </ul>
       </div>
       <FreeTrial />
     </div>
