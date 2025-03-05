@@ -1,37 +1,39 @@
 import Button from "@/components/button";
 import Title from "@/components/title";
 import FreeTrial from "@/layout/intro";
+import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 
 const items: Array<Option & { icon: string }> = [
   {
     label: "资深团队",
     value: "深根资产云管理领域xx年，平均从业经验xx年。",
-    icon: "",
+    icon: "https://ziweiton.oss-cn-hangzhou.aliyuncs.com/introduce1.webp",
   },
   {
     label: "行业经验丰富",
     value: "具有全行业全场景解决方案服务经验，覆盖互联网、制造业、零售等行业。",
-    icon: "",
+    icon: "https://ziweiton.oss-cn-hangzhou.aliyuncs.com/introduce2.webp",
   },
   {
     label: "贴心部署",
     value: "管家式实施部署，助力无忧上线助力企业快速实现资产管理数智化。",
-    icon: "",
+    icon: "https://ziweiton.oss-cn-hangzhou.aliyuncs.com/introduce3.webp",
   },
   {
     label: "售后无忧",
     value: "专业售后团队7*24支持，快速响应，为您的资管保驾护航。",
-    icon: "",
+    icon: "https://ziweiton.oss-cn-hangzhou.aliyuncs.com/introduce4.webp",
   },
 ];
 
 function HomePage() {
   return (
-    <div>
-      <div className="pt-50 pb-15">
+    <React.Fragment>
+      <div className="pt-50 pb-15 bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner1.webp)] bg-contain bg-no-repeat">
         <div className="flex flex-col gap-6">
-          <h2 className="text-[#0C1E58] text-40 text-center">
+          <h2 className="text-[#0C1E58] text-40 text-center font-medium">
             紫维通·专业资产管理云平台
           </h2>
           <h3 className="text-gray text-22 text-center">
@@ -43,26 +45,42 @@ function HomePage() {
         </div>
         <div className="flex flex-col items-center gap-26 mt-53.5">
           <Title text="专业服务 助力资管降本提效" />
-          <div>Placeholder</div>
+          <div className="h-[626px] w-1/2 bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/stage.webp)] bg-contain bg-no-repeat relative">
+            <div className="flex flex-col absolute left-[76px] top-4">
+              <span className="text-primary text-base">需求调研</span>
+            </div>
+            <div className="flex flex-col absolute left-[196px] -top-4">
+              <span className="text-primary text-base">系统部署</span>
+            </div>
+          </div>
           <Button href="/prescription">查看解决方案</Button>
         </div>
       </div>
-      <div className="pt-19 h-[346px] px-56 bg-primary relative">
+      <div className="pt-19 h-[300px] px-56 bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner2.webp)] bg-contain bg-no-repeat relative">
         <Title text="专业团队 技术驱动" className="text-white" />
         <ul className="flex gap-4 absolute top-43 left-1/2 -translate-x-1/2">
           {items.map((item, index) => (
             <li
-              className="bg-white rounded inset-shadow-card py-11.5 px-7.5 w-63"
+              className="bg-white rounded inset-shadow-card py-11.5 px-7.5 w-63 h-75 relative"
               key={index}
             >
               <h4 className="text-20">{item.label}</h4>
               <p className="text-sm text-gray mt-3">{item.value}</p>
+              <Image
+                src={item.icon}
+                alt="icon"
+                width={160}
+                height={160}
+                className="absolute right-0 bottom-0 w-40 h-40"
+              />
             </li>
           ))}
         </ul>
       </div>
-      <FreeTrial />
-    </div>
+      <div className="pt-40 bg-white">
+        <FreeTrial />
+      </div>
+    </React.Fragment>
   );
 }
 

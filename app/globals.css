@@ -5,11 +5,6 @@
   --font-mono: var(--font-geist-mono);
 }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -37,8 +32,21 @@
   --inset-shadow-card: 0px 0px 10px 3px #ecf0fb;
 }
 
+@layer utilities {
+  :root {
+    --banner1: url("https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner1.webp");
+  }
+
+  .bg-custom {
+    background-image: var(--banner1);
+  }
+}
+
+html,
 body {
   color: var(--color-black);
   background: #f1f4fe;
   font-family: Source Han Sans CN;
+  width: 100vw;
+  height: 100vh;
 }

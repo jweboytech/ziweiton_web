@@ -1,9 +1,11 @@
+"use client";
+
 import clsx from "clsx";
 import React from "react";
 import Button from "./button";
 
 const CustomerService = () => {
-  const [isOpen, setIsOpen] = React.useState(true);
+  const [isOpen, setIsOpen] = React.useState(false);
 
   const handleToggleStatus = () => {
     setIsOpen(!isOpen);
@@ -14,8 +16,8 @@ const CustomerService = () => {
   return (
     <div
       className={clsx(
-        "absolute bottom-24 right-0 cursor-pointer transition-width duration-300 ease-in-out flex w-[194px]"
-        // isOpen ? "w-[194px]" : "w-[52px]"
+        "absolute bottom-24 right-0 cursor-pointer transition-width duration-300 ease-in-out flex",
+        isOpen ? "w-[174px]" : "w-[52px]"
       )}
       onClick={handleToggleStatus}
     >
