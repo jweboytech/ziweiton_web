@@ -1,18 +1,16 @@
 import CustomerService from "@/components/customerService";
 import Title from "@/components/title";
 import FreeTrial from "@/layout/intro";
-import Section from "@/layout/section";
-import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const tabs: Option[] = [
-  { label: "互联网", value: "互联网" },
-  { label: "酒店", value: "酒店" },
-  { label: "生产制造", value: "生产制造" },
-  { label: "零售连锁", value: "零售连锁" },
-];
+// const tabs: Option[] = [
+//   { label: "互联网", value: "互联网" },
+//   { label: "酒店", value: "酒店" },
+//   { label: "生产制造", value: "生产制造" },
+//   { label: "零售连锁", value: "零售连锁" },
+// ];
 
 const items: Array<Option> = [
   {

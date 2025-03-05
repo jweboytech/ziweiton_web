@@ -19,7 +19,7 @@ import Section from "@/layout/section";
 
 const IndustrySolutions = () => {
   let items: Question[] = [];
-  let solutions: Solution[] = [];
+  let solutions: SectionData[] = [];
   const [activeKey, setActiveKey] = React.useState<IndustryType>("network");
   const current = INDUSTRY_LIST.find((item) => item.value === activeKey);
 

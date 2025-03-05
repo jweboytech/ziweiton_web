@@ -133,7 +133,7 @@ export const RETAIL_QUESTIONS: Question[] = [
   },
 ];
 
-export const NETWORK_SOLUTIONS: Solution[] = [
+export const NETWORK_SOLUTIONS: SectionData[] = [
   {
     icon: "https://ziweiton.oss-cn-hangzhou.aliyuncs.com/network_solution1.webp",
     title: "高效盘点",
@@ -151,7 +151,7 @@ export const NETWORK_SOLUTIONS: Solution[] = [
   },
 ];
 
-export const HOTEL_SOLUTIONS: Solution[] = [
+export const HOTEL_SOLUTIONS: SectionData[] = [
   {
     icon: "https://ziweiton.oss-cn-hangzhou.aliyuncs.com/network_solution1.webp",
     title: "设备分类管理",
@@ -171,7 +171,7 @@ export const HOTEL_SOLUTIONS: Solution[] = [
   },
 ];
 
-export const FABRICATION_SOLUTIONS: Solution[] = [
+export const FABRICATION_SOLUTIONS: SectionData[] = [
   {
     icon: "https://ziweiton.oss-cn-hangzhou.aliyuncs.com/network_solution1.webp",
     title: "资产全生命周期管理",
@@ -192,7 +192,7 @@ export const FABRICATION_SOLUTIONS: Solution[] = [
   },
 ];
 
-export const RETAIL_SOLUTIONS: Solution[] = [
+export const RETAIL_SOLUTIONS: SectionData[] = [
   {
     icon: "https://ziweiton.oss-cn-hangzhou.aliyuncs.com/network_solution1.webp",
     title: "资产全生命周期管理",
