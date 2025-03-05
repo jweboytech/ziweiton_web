@@ -1,37 +1,31 @@
+import Image from "next/image";
+
 export interface SectionProps {
   title: string;
+  items: SectionData[];
 }
 
-const Section = ({ title }: SectionProps) => {
+const Section = ({ title, items }: SectionProps) => {
   return (
     <div className="relative">
-      <div className="bg-blue h-[376px]">
+      <div className="h-[276px] bg-cover bg-no-repeat bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner5.webp)]">
         <h2 className="text-white text-28 text-center py-15">{title}</h2>
       </div>
-      <div className="absolute top-[170px] left-0 w-full border-b border-gray-light">
-        <div className="bg-white rounded px-9 py-[86px] mx-auto w-fit">
+      <div className="absolute top-[170px] left-0 w-full border-b border-gray-light px-48 ">
+        <div className="bg-white rounded py-21.5 mx-auto w-fit">
           <ul className="grid grid-cols-3 gap-20">
-            <li className="flex flex-col items-center gap-5">
-              <div className="w-[144px] h-42 bg-gray mb-1" />
-              <span className="text-20">高效盘点</span>
-              <p className="text-sm">
-                支持支持多地资产统一管理，实时追踪设备状态。
-              </p>
-            </li>
-            <li className="flex flex-col items-center gap-5">
-              <div className="w-[144px] h-42 bg-gray mb-1" />
-              <span className="text-20">高效盘点</span>
-              <p className="text-sm">
-                支持支持多地资产统一管理，实时追踪设备状态。
-              </p>
-            </li>
-            <li className="flex flex-col items-center gap-5">
-              <div className="w-[144px] h-42 bg-gray mb-1" />
-              <span className="text-20">高效盘点</span>
-              <p className="text-sm">
-                支持支持多地资产统一管理，实时追踪设备状态。
-              </p>
-            </li>
+            {items.map((item, index) => (
+              <li key={index} className="flex flex-col items-center gap-5">
+                <Image
+                  src={item.icon}
+                  width={180}
+                  height={180}
+                  alt={item.title}
+                />
+                <span className="text-20">{item.title}</span>
+                <p className="text-sm">{item.description}</p>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
