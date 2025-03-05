@@ -1,10 +1,11 @@
 import FreeTrial from "@/layout/intro";
 import React from "react";
 import IndustrySolutions from "./components/industrySolutions";
+import CustomerService from "@/components/customerService";
 
 const PrescriptionPage = () => {
   return (
-    <div>
+    <React.Fragment>
       <div className="bg-white">
         <div className="px-100 pt-32 h-87.5 flex flex-col bg-contain bg-no-repeat bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner3.webp)]">
           <h2 className="text-28">
@@ -18,7 +19,8 @@ const PrescriptionPage = () => {
           <FreeTrial />
         </div>
       </div>
-    </div>
+      <CustomerService />
+    </React.Fragment>
   );
 };
 

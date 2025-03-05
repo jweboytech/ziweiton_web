@@ -12,7 +12,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased h-screen flex flex-col">
+      <body className="antialiased h-screen flex flex-col overflow-hidden">
         <main className="w-full overflow-x-hidden ">{children}</main>
       </body>
     </html>

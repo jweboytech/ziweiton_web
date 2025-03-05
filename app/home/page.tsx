@@ -1,8 +1,8 @@
 import Button from "@/components/button";
+import CustomerService from "@/components/customerService";
 import Title from "@/components/title";
 import FreeTrial from "@/layout/intro";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 const items: Array<Option & { icon: string }> = [
@@ -56,7 +56,7 @@ function HomePage() {
           <Button href="/prescription">查看解决方案</Button>
         </div>
       </div>
-      <div className="pt-19 h-[300px] px-56 bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner2.webp)] bg-contain bg-no-repeat relative">
+      <div className="pt-19 h-[300px] px-56 bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner2.webp)] bg-cover bg-no-repeat relative">
         <Title text="专业团队 技术驱动" className="text-white" />
         <ul className="flex gap-4 absolute top-43 left-1/2 -translate-x-1/2">
           {items.map((item, index) => (
@@ -80,6 +80,7 @@ function HomePage() {
       <div className="pt-40 bg-white">
         <FreeTrial />
       </div>
+      <CustomerService />
     </React.Fragment>
   );
 }

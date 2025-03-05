@@ -17,14 +17,14 @@ const CustomerService = () => {
     <div
       className={clsx(
         "absolute bottom-24 right-0 cursor-pointer transition-width duration-300 ease-in-out flex",
-        isOpen ? "w-[174px]" : "w-[52px]"
+        isOpen ? "translate-x-0" : "translate-x-49"
       )}
       onClick={handleToggleStatus}
     >
       <div className="w-13.5 h-38.5 bg-primary rounded-tl-2xl rounded-bl-2xl text-white px-3 py-3 break-all text-center absolute top-1/2 -translate-y-1/2 -left-13.5">
         <span className="text-[#FFFDFD] text-lg">咨询客服</span>
       </div>
-      <div className="border-l border-t border-b border-l-primary border-t-primary border-b-primary rounded-tl-xl rounded-bl-xl bg-white flex-1 px-4 pt-5 pb-2">
+      <div className="w-48.5 border-l border-t border-b border-l-primary border-t-primary border-b-primary rounded-tl-xl rounded-bl-xl bg-white flex-1 px-4 pt-5 pb-2">
         <div className="text-gray text-base flex items-center gap-2 justify-center py-4 border-b border-gray-light">
           <div className="w-3 h-3 bg-gray" />
           <span>13888888888</span>

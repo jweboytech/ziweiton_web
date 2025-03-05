@@ -1,4 +1,5 @@
 import Button from "@/components/button";
+import CustomerService from "@/components/customerService";
 import Title from "@/components/title";
 import FreeTrial from "@/layout/intro";
 import Image from "next/image";
@@ -6,7 +7,7 @@ import React from "react";
 
 const PrescriptionPage = () => {
   return (
-    <div>
+    <React.Fragment>
       <div className="bg-white h-[350px] px-100 pt-32  bg-cover bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner3.webp)]">
         <h2 className="text-28 mb-4">携手共赢 共创未来</h2>
         <p className="text-base text-gray">
@@ -212,7 +213,8 @@ const PrescriptionPage = () => {
         </div>
       </div>
       <FreeTrial />
-    </div>
+      <CustomerService />
+    </React.Fragment>
   );
 };
 
