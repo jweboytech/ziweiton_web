@@ -69,7 +69,7 @@ const items: Array<Option> = [
 const ProductPage = () => {
   return (
     <div>
-      <div className="py-11 px-40 bg-white flex flex-col bg-contain bg-no-repeat bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner3.webp)]">
+      <div className="py-11 px-80 bg-white flex flex-col bg-contain bg-no-repeat bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner3.webp)]">
         <div className="flex flex-col gap-3">
           <h2 className="text-28">企业资产实现数字化全生命周期管理</h2>
           <ul className="text-base text-gray flex gap-2 items-center">

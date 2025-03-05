@@ -6,7 +6,7 @@ const PrescriptionPage = () => {
   return (
     <div>
       <div className="bg-white">
-        <div className="px-40 pt-32 h-87.5 flex flex-col bg-contain bg-no-repeat bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner3.webp)]">
+        <div className="px-100 pt-32 h-87.5 flex flex-col bg-contain bg-no-repeat bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner3.webp)]">
           <h2 className="text-28">
             多场景解决方案
             <br />
