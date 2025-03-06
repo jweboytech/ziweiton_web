@@ -19,11 +19,11 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="block md:hidden h-screen w-screen fixed left-0 top-0 z-50">
+    <React.Fragment>
       <div
         className={clsx(
-          "w-full h-full bg-black/25 transition-opacity duration-300",
-          isOpen ? "opacity-100" : "opacity-0"
+          "w-screen h-screen bg-black/25 transition-opacity duration-300 fixed",
+          isOpen ? "opacity-100 z-100" : "opacity-0 -z-10"
         )}
         onClick={handleToggleStatus}
       >
@@ -63,7 +63,7 @@ const Sidebar = () => {
       <div
         onClick={handleToggleStatus}
         className={clsx(
-          "grid w-12.5 h-12.5 grid-cols-1 gap-1 absolute left-0 top-0 bg-primary rounded-br-[20px] text-white px-2 py-4",
+          "z-10 grid w-12.5 h-12.5 grid-cols-1 gap-1 absolute left-0 top-0 bg-primary rounded-br-[20px] text-white px-2 py-4",
           isOpen ? "hidden" : "block"
         )}
       >
@@ -71,7 +71,7 @@ const Sidebar = () => {
         <div className="bg-white h-1 w-full rounded-full" />
         <div className="bg-white h-1 w-full rounded-full" />
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 

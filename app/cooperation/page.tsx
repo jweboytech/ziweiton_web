@@ -8,12 +8,20 @@ import React from "react";
 const PrescriptionPage = () => {
   return (
     <React.Fragment>
-      <div className="bg-white h-[350px] px-100 pt-32  bg-cover bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner3.webp)]">
-        <h2 className="text-28 mb-4">携手共赢 共创未来</h2>
-        <p className="text-base text-gray">
+      <div className="relative bg-white h-[172px] md:h-[350px] pl-6.5 pt-16.5 md:px-100 md:pt-32  bg-cover md:bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner3.webp)]">
+        <h2 className="text-sm md:text-28 mb-4">携手共赢 共创未来</h2>
+        <p className="text-xs md:text-base text-gray">
           不管您是组织还是个人 <br />
           紫维通诚邀您立即加入 开启财富之路
         </p>
+        <Image
+          src="https://ziweiton.oss-cn-hangzhou.aliyuncs.com/mobile/banner3.webp"
+          className="block md:hidden absolute top-0 right-0 w-53.5 h-43"
+          width={214}
+          height={172}
+          alt="banner"
+          priority
+        />
       </div>
       <div className="pt-17.5 pb-10 w-fit m-auto">
         <Title text="成为代理商/合伙人将获得" className="mb-26.5" />
