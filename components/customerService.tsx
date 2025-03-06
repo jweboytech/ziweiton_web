@@ -11,12 +11,10 @@ const CustomerService = () => {
     setIsOpen(!isOpen);
   };
 
-  console.log(isOpen);
-
   return (
     <div
       className={clsx(
-        "absolute bottom-24 right-0 cursor-pointer transition-width duration-300 ease-in-out flex",
+        "hidden md:flex absolute bottom-24 right-0 cursor-pointer transition-width duration-300 ease-in-out ",
         isOpen ? "translate-x-0" : "translate-x-49"
       )}
       onClick={handleToggleStatus}

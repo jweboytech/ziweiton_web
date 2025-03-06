@@ -3,8 +3,8 @@ import React from "react";
 
 const FreeTrial = () => {
   return (
-    <div className="bg-white py-16.5 flex flex-col gap-7.5 justify-center items-center">
-      <p className="text-28 text-center">
+    <div className="bg-white pt-6 pb-2.5 md:py-16.5 flex flex-col gap-4 md:gap-7.5 justify-center items-center">
+      <p className="text-sm md:text-28 text-center">
         注册无需营业执照，帮您减少资产闲置，简单又好上手
       </p>
       <Button href="/">免费试用</Button>

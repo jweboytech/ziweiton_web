@@ -31,21 +31,21 @@ const items: Array<Option & { icon: string }> = [
 function HomePage() {
   return (
     <React.Fragment>
-      <div className="pt-50 pb-15 bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner1.webp)] bg-contain bg-no-repeat">
-        <div className="flex flex-col gap-6">
-          <h2 className="text-[#0C1E58] text-40 text-center font-medium">
+      <div className="pt-14 md:pt-50 pb-15 bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/mobile/banner1.webp)] md:bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner1.webp)] bg-contain bg-no-repeat">
+        <div className="flex flex-col gap-3 md:gap-6">
+          <h2 className="text-[#0C1E58] text-20 md:text-40 text-center font-medium">
             紫维通·专业资产管理云平台
           </h2>
-          <h3 className="text-gray text-22 text-center">
+          <h3 className="text-gray text-xs md:text-22 text-center">
             实现资产数智化、精细化、全生命周期管理
           </h3>
           <div className="mt-6 text-center">
             <Button href="/product">查看产品介绍</Button>
           </div>
         </div>
-        <div className="flex flex-col items-center gap-26 mt-53.5">
+        <div className="flex flex-col items-center gap-26 mt-12.5 md:mt-53.5">
           <Title text="专业服务 助力资管降本提效" />
-          <div>
+          <div className="hidden md:block">
             <div className="h-[626px] w-250 bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/stage.webp)] bg-contain bg-no-repeat relative">
               <span className="text-primary text-20 absolute left-[10.5%] top-[4%]">
                 需求调研
@@ -133,7 +133,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="pt-19 h-[300px] px-56 bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner2.webp)] bg-cover bg-no-repeat relative">
+      <div className="hidden md:block pt-19 h-[300px] px-56 bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner2.webp)] bg-cover bg-no-repeat relative">
         <Title text="专业团队 技术驱动" className="text-white" />
         <ul className="flex gap-4 absolute top-43 left-1/2 -translate-x-1/2">
           {items.map((item, index) => (
@@ -154,7 +154,31 @@ function HomePage() {
           ))}
         </ul>
       </div>
-      <div className="pt-40 bg-white">
+      <div className="block md:hidden bg-white">
+        <div className="pt-10 h-[148px] px-4 bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/mobile/banner2.webp)] bg-cover bg-no-repeat relative">
+          <Title text="专业团队 技术驱动" className="text-white" />
+        </div>
+        <div className="border-b border-b-gray-light pb-5">
+          <ul className="flex flex-col mx-4 py-6 relative -mt-14 bg-white ">
+            {items.map((item, index) => (
+              <li className="py-2 px-6 flex gap-3" key={index}>
+                <Image
+                  src={item.icon}
+                  alt="icon"
+                  width={84}
+                  height={84}
+                  className="w-21 h-21"
+                />
+                <div className="flex flex-col">
+                  <h4 className="text-sm">{item.label}</h4>
+                  <p className="text-xs text-gray mt-2">{item.value}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <div className="md:pt-40 bg-white">
         <FreeTrial />
       </div>
       <CustomerService />

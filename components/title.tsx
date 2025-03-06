@@ -13,15 +13,15 @@ const Title = ({ text, className }: TitleProps) => {
       <Image
         src="https://ziweiton.oss-cn-hangzhou.aliyuncs.com/slash.png"
         alt="slash"
-        className="w-11 h-6.5"
+        className="w-6 md:w-11 h-3 md:h-6.5"
         width={44}
         height={26}
       />
-      <span className="text-28">{text}</span>
+      <span className="text-sm md:text-28">{text}</span>
       <Image
         src="https://ziweiton.oss-cn-hangzhou.aliyuncs.com/slash.png"
         alt="slash"
-        className="w-11 h-6.5"
+        className="w-6 md:w-11 h-3 md:h-6.5"
         width={44}
         height={26}
       />
