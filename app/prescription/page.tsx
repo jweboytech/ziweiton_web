@@ -15,7 +15,7 @@ const PrescriptionPage = () => {
           </h2>
         </div>
         <IndustrySolutions />
-        <div className="pt-82">
+        <div className="pt-102">
           <FreeTrial />
         </div>
       </div>
