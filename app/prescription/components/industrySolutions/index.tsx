@@ -49,8 +49,8 @@ const IndustrySolutions = () => {
   }
 
   return (
-    <div>
-      <div className="grid grid-cols-4 bg-blue-light rounded-full w-fit mx-auto mt-5">
+    <React.Fragment>
+      <div className="hidden md:grid grid-cols-4 bg-blue-light rounded-full w-fit mx-auto mt-5">
         {INDUSTRY_LIST.map((item) => (
           <div
             onClick={handleTabChange(item.value)}
@@ -79,25 +79,62 @@ const IndustrySolutions = () => {
           </div>
         ))}
       </div>
-      <div className="pt-17 pb-11 px-48">
+      <div className="flex md:hidden grid-cols-4 px-2.5 mt-2">
+        {INDUSTRY_LIST.map((item) => (
+          <div
+            onClick={handleTabChange(item.value)}
+            key={item.value}
+            className={clsx(
+              "p-3 rounded-full",
+              activeKey === item.value && "bg-primary"
+            )}
+          >
+            <div className="flex gap-1 items-center cursor-pointer">
+              <Image
+                src={activeKey === item.value ? item.highlightIcon1 : item.icon}
+                width={20}
+                height={20}
+                alt="icon"
+              />
+              <span
+                className={clsx(
+                  activeKey === item.value ? "text-white" : "text-gray",
+                  "text-xs"
+                )}
+              >
+                {item.label}
+              </span>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="pt-8.5 md:pt-17 pb-6 md:pb-11 px-2.5 md:px-48">
         <Title text={`${current?.label}行业主要问题`} />
-        <ul className="grid grid-cols-4 gap-4 mt-11">
+        <ul className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-11">
           {items.map((item, index) => (
             <li
               key={index}
-              className="bg-white inset-shadow-card rounded px-8 pt-8 pb-11 flex flex-col gap-9 border-b-4 border-b-warning"
+              className="bg-white inset-shadow-card rounded pl-4.5 pr-7 md:px-8 pt-3 md:pt-8 pb-6 md:pb-11 flex flex-col gap-2 md:gap-9 border-b-4 border-b-warning"
             >
-              <Image src={item.icon} width={40} height={40} alt="icon" />
+              <Image
+                src={item.icon}
+                className="w-7.5 h-7.5 md:w-10 md:h-10"
+                width={40}
+                height={40}
+                alt="icon"
+              />
               <div>
-                <h3 className="text-20">{item.title}</h3>
-                <p className="text-sm text-gray">{item.description}</p>
+                <h3 className="text-sm md:text-20">{item.title}</h3>
+                <p className="text-xs md:text-sm text-gray">
+                  {item.description}
+                </p>
               </div>
             </li>
           ))}
         </ul>
       </div>
       <Section title={`${current?.label}行业解决方案`} items={solutions} />
-    </div>
+    </React.Fragment>
   );
 };
 

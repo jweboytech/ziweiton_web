@@ -92,7 +92,7 @@ const ProductPage = () => {
           </ul>
         </div>
       </div>
-      <div className="block md:hidden relative bg-white h-[174px] pl-8 pt-15.5 md:px-100 md:pt-32  bg-cover md:bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner3.webp)]">
+      <div className="block md:hidden relative bg-white h-[174px] pl-8 pt-15.5">
         <div className="text-base mb-3.5 w-36">
           企业资产实现数字化全生命周期管理
         </div>

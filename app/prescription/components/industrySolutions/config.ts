@@ -1,5 +1,5 @@
 export const INDUSTRY_LIST: Array<
-  Option & { icon: string; highlightIcon: string }
+  Option & { icon: string; highlightIcon: string; highlightIcon1: string }
 > = [
   {
     label: "互联网",
@@ -7,6 +7,8 @@ export const INDUSTRY_LIST: Array<
     icon: "https://ziweiton.oss-cn-hangzhou.aliyuncs.com/icon/network.webp",
     highlightIcon:
       "https://ziweiton.oss-cn-hangzhou.aliyuncs.com/icon/network_highlight.webp",
+    highlightIcon1:
+      "https://ziweiton.oss-cn-hangzhou.aliyuncs.com/icon/network_highlight1.webp",
   },
   {
     label: "酒店",
@@ -14,6 +16,8 @@ export const INDUSTRY_LIST: Array<
     icon: "https://ziweiton.oss-cn-hangzhou.aliyuncs.com/icon/hotel.webp",
     highlightIcon:
       "https://ziweiton.oss-cn-hangzhou.aliyuncs.com/icon/hotel_highlight.webp",
+    highlightIcon1:
+      "https://ziweiton.oss-cn-hangzhou.aliyuncs.com/icon/hotel_highlight1.webp",
   },
   {
     label: "生产制造",
@@ -21,6 +25,8 @@ export const INDUSTRY_LIST: Array<
     icon: "https://ziweiton.oss-cn-hangzhou.aliyuncs.com/icon/fabrication.webp",
     highlightIcon:
       "https://ziweiton.oss-cn-hangzhou.aliyuncs.com/icon/fabrication_highlight.webp",
+    highlightIcon1:
+      "https://ziweiton.oss-cn-hangzhou.aliyuncs.com/icon/fabrication_highlight1.webp",
   },
   {
     label: "零售连锁",
@@ -28,6 +34,8 @@ export const INDUSTRY_LIST: Array<
     icon: "https://ziweiton.oss-cn-hangzhou.aliyuncs.com/icon/retail.webp",
     highlightIcon:
       "https://ziweiton.oss-cn-hangzhou.aliyuncs.com/icon/retail_highlight.webp",
+    highlightIcon1:
+      "https://ziweiton.oss-cn-hangzhou.aliyuncs.com/icon/retail_highlight1.webp",
   },
 ];
 
