@@ -63,7 +63,7 @@ const Sidebar = () => {
       <div
         onClick={handleToggleStatus}
         className={clsx(
-          "md:hidden z-10 grid w-12.5 h-12.5 grid-cols-1 gap-1 absolute left-0 top-0 bg-primary rounded-br-[20px] text-white px-2 py-4",
+          "md:hidden z-80 grid w-12.5 h-12.5 grid-cols-1 gap-1 absolute left-0 top-0 bg-primary rounded-br-[20px] text-white px-2 py-4",
           isOpen ? "hidden" : "block"
         )}
       >

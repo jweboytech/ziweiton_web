@@ -79,7 +79,7 @@ const IndustrySolutions = () => {
           </div>
         ))}
       </div>
-      <div className="flex md:hidden grid-cols-4 px-2.5 mt-2">
+      <div className="flex md:hidden grid-cols-4 px-2.5 mt-2 justify-center">
         {INDUSTRY_LIST.map((item) => (
           <div
             onClick={handleTabChange(item.value)}

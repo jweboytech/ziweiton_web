@@ -1,3 +1,4 @@
+import Title from "@/components/title";
 import Image from "next/image";
 
 export interface SectionProps {
@@ -9,9 +10,7 @@ const Section = ({ title, items }: SectionProps) => {
   return (
     <div className="relative">
       <div className="h-[150px] md:h-[376px] bg-cover bg-no-repeat bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/mobile/banner5.webp)] md:bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner5.webp)]">
-        <h2 className="text-white tetx-sm md:text-28 text-center py-9.5 md:py-15">
-          {title}
-        </h2>
+        <Title text={title} theme="white" className="py-9.5 md:py-15" />
       </div>
       <div className="relative -mt-12 md:-mt-54 left-0 w-full border-b border-gray-light px-4 pb-12.5 md:px-48 ">
         <div className="bg-white rounded py-3 md:py-21.5 mx-auto w-fit">

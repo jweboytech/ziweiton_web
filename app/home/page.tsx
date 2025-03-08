@@ -31,7 +31,7 @@ const items: Array<Option & { icon: string }> = [
 function HomePage() {
   return (
     <React.Fragment>
-      <div className="pt-14 md:pt-50 pb-15 bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/mobile/banner1.webp)] md:bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner1.webp)] bg-contain bg-no-repeat">
+      <div className="pt-14 md:pt-50 pb-15 bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/mobile/banner1.webp)] md:bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner1.webp)] bg-cover bg-no-repeat">
         <div className="flex flex-col gap-3 md:gap-6">
           <h2 className="text-[#0C1E58] text-20 md:text-40 text-center font-medium">
             紫维通·专业资产管理云平台
@@ -134,7 +134,7 @@ function HomePage() {
         </div>
       </div>
       <div className="hidden md:block pt-19 h-[300px] px-56 bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner2.webp)] bg-cover bg-no-repeat relative">
-        <Title text="专业团队 技术驱动" className="text-white" />
+        <Title text="专业团队 技术驱动" theme="white" />
         <ul className="flex gap-4 absolute top-43 left-1/2 -translate-x-1/2">
           {items.map((item, index) => (
             <li
@@ -156,7 +156,7 @@ function HomePage() {
       </div>
       <div className="block md:hidden bg-white">
         <div className="pt-10 h-[148px] px-4 bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/mobile/banner2.webp)] bg-cover bg-no-repeat relative">
-          <Title text="专业团队 技术驱动" className="text-white" />
+          <Title text="专业团队 技术驱动" theme="white" />
         </div>
         <div className="border-b border-b-gray-light pb-5">
           <ul className="flex flex-col mx-4 py-6 relative -mt-14 bg-white ">

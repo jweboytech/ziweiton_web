@@ -23,11 +23,11 @@ const buttonVariants = cva(
         // sm: "h-8 rounded-md px-3 text-xs",
         // lg: "h-10 rounded-md px-8",
         // icon: "h-9 w-9",
-        xs: "w-20 h-8 text-xs",
-        sm: "w-30 h-9 text-base",
-        md: "w-30 h-12 text-lg",
         default: "h-9 md:h-10 text-xs md:text-base",
-        lg: "w-62 h-16 text-lg",
+        // xs: "w-20 h-8 text-xs",
+        // sm: "w-30 h-9 text-base",
+        // md: "w-30 h-12 text-lg",
+        // lg: "w-62 h-16 text-lg",
       },
       isDisabled: {
         true: "opacity-50 cursor-not-allowed", // 禁用按钮的样式
