@@ -141,7 +141,7 @@ const ProductPage = () => {
                 height={26}
               />
             </h3>
-            <div className="bg-gray-light w-[616px] h-[250px]" />
+            <div className="bg-gray-light w-[616px] h-[250px] bg-cover bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/prescription.webp)]" />
           </div>
         </div>
         <div className="bg-blue relative bg-cover bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner4.webp)]">
@@ -191,12 +191,12 @@ const ProductPage = () => {
               </li>
             </ul>
           </div>
-          <div className="bg-gray-dark w-154 h-62.5" />
+          <div className="bg-gray-dark w-154 h-62.5 bg-cover bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/inventory_assets.webp)]" />
         </div>
       </div>
       <div className="py-12.5 px-40 bg-white  hidden md:block">
         <div className="flex justify-center gap-7.5">
-          <div className="bg-gray-dark w-154 h-62.5" />
+          <div className="bg-gray-dark w-154 h-62.5 bg-cover bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/life_cycle.webp)]" />
           <div className="flex flex-col gap-8 w-120 justify-center">
             <h3 className="text-20">固定资产全生命周期管理</h3>
             <ul className="flex flex-col gap-3 text-gray text-sm">
@@ -255,7 +255,7 @@ const ProductPage = () => {
               </li>
             </ul>
           </div>
-          <div className="bg-gray-dark w-154 h-62.5" />
+          <div className="bg-gray-dark w-154 h-62.5 bg-cover bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/intelligent_analysis.webp)]" />
         </div>
       </div>
       <div className="block md:hidden">
@@ -266,7 +266,7 @@ const ProductPage = () => {
               贵重资产定位防丢失
             </h3>
             <div className="pl-4 pr-7.5 flex gap-4 bg-cover h-[212px] bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/mobile/banner4.webp)]">
-              <div className="bg-gray-light w-[134px] h-[210px] absolute bottom-9.5" />
+              <div className="bg-gray-light w-[134px] h-[210px] absolute bottom-9.5 bg-cover bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/mobile/prescription.webp)]" />
               <ul className="text-white text-xs list-disc flex flex-col gap-2 relative left-38 py-4 pr-40">
                 <li className="inline-flex gap-2 items-start">
                   <div className="bg-warning w-1 h-1 rounded-full mt-1" />
@@ -312,7 +312,7 @@ const ProductPage = () => {
               <div className="flex-1">盘点结果一键自动生成。 </div>
             </li>
           </ul>
-          <div className="bg-gray-light w-[134px] h-[210px] absolute right-4 -top-4" />
+          <div className="bg-gray-light w-[134px] h-[210px] absolute right-4 -top-4 bg-cover bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/mobile/inventory_assets.webp)]" />
         </div>
         <div className="relative">
           <div className="pl-6.5 pt-7 pb-2.5 bg-white">
@@ -320,7 +320,7 @@ const ProductPage = () => {
               固定资产全生命周期管理
             </h3>
           </div>
-          <div className="bg-gray-light w-[134px] h-[260px] absolute left-4 -top-4" />
+          <div className="bg-gray-light w-[134px] h-[260px] absolute left-4 -top-4 bg-cover bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/mobile/life_cycle.webp)]" />
           <ul className="flex flex-col gap-3 text-gray text-xs pr-6.5 pt-5 pb-10 pl-40">
             <li className="inline-flex gap-2 items-start">
               <div className="bg-blue w-1 h-1 mt-1 rounded-full" />
@@ -370,7 +370,7 @@ const ProductPage = () => {
               </div>
             </li>
           </ul>
-          <div className="bg-gray-light w-[134px] h-[210px] absolute right-4 -top-4" />
+          <div className="bg-gray-light w-[134px] h-[210px] absolute right-4 -top-4 bg-cover bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/mobile/intelligent_analysis.webp)]" />
         </div>
       </div>
       <div className="bg-primary text-white text-base text-center">
