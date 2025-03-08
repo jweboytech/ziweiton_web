@@ -2,6 +2,7 @@
 
 import { MENUS } from "@/constants";
 import clsx from "clsx";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
@@ -37,9 +38,13 @@ const Sidebar = () => {
           <ul>
             <li className="py-4.5 pl-7 pr-3.5 flex items-center justify-between">
               <span className="uppercase text-white ">logo</span>
-              <span className="text-white" onClick={handleToggleStatus}>
-                close
-              </span>
+              <Image
+                src="https://ziweiton.oss-cn-hangzhou.aliyuncs.com/icon/close.webp"
+                width={12}
+                height={12}
+                onClick={handleToggleStatus}
+                alt="close icon"
+              />
             </li>
             {MENUS.map((item) => (
               <Link
