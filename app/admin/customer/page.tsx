@@ -1,7 +1,6 @@
 import { Input } from "@/components/ui/input";
 import {
   Table,
-  TableCaption,
   TableHeader,
   TableRow,
   TableHead,
