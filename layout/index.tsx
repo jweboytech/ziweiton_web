@@ -8,7 +8,7 @@ const MainLayout = ({ children }: BaseProps) => {
     <div className="bg-[#F1F4FE] flex-grow">
       <Sidebar />
       <Header />
-      <section>{children}</section>
+      <section className="md:pt-20">{children}</section>
       <Footer />
     </div>
   );

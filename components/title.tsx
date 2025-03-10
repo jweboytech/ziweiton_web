@@ -24,7 +24,7 @@ const Title = ({ text, className, theme = "black" }: TitleProps) => {
       />
       <span
         className={clsx(
-          "text-sm md:text-28",
+          "text-sm md:text-34",
           theme === "white" && "text-white",
           theme === "black" && "text-black"
         )}

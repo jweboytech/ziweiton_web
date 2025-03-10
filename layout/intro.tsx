@@ -7,7 +7,7 @@ const FreeTrial = () => {
       <p className="text-sm md:text-28 text-center">
         注册无需营业执照，帮您减少资产闲置，简单又好上手
       </p>
-      <Button href="/">免费试用</Button>
+      <Button href="/" variant="gradient" className="text-2xl md:w-46.5">免费试用</Button>
     </div>
   );
 };

@@ -15,7 +15,7 @@ const Navbar = () => {
         <Link href={item.value} key={item.value}>
           <li
             className={clsx(
-              "cursor-pointer hover:text-primary group-hover:text-gray text-sm transition-colors duration-300",
+              "cursor-pointer hover:text-primary group-hover:text-gray text-20 transition-colors duration-300",
               item.value === pathname ? "text-primary" : "text-gray"
             )}
           >

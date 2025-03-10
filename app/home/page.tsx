@@ -33,101 +33,107 @@ function HomePage() {
     <div className="bg-white">
       <div className="pt-14 md:pt-50 pb-15 md:h-[908px] bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/mobile/banner1.webp)] md:bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner1.webp)] bg-white bg-cover bg-no-repeat">
         <div className="flex flex-col gap-3 md:gap-6">
-          <h2 className="text-[#0C1E58] text-20 md:text-40 text-center font-medium">
+          <h2 className="text-[#0C1E58] text-20 md:text-[62px] text-center font-medium">
             紫维通·专业资产管理云平台
           </h2>
-          <h3 className="text-gray text-xs md:text-22 text-center">
+          <h3 className="text-gray text-xs md:text-[34px] text-center">
             实现资产数智化、精细化、全生命周期管理
           </h3>
           <div className="mt-6 text-center">
-            <Button href="/product">查看产品介绍</Button>
+            <Button
+              href="/product"
+              variant="gradient"
+              className="md:w-56 md:text-2xl"
+            >
+              查看产品介绍
+            </Button>
           </div>
         </div>
       </div>
-      <div className="hidden md:flex flex-col items-center gap-26 relative -mt-71 ">
+      <div className="hidden md:flex flex-col items-center gap-26 relative -mt-89">
         <Title text="专业服务 助力资管降本提效" />
         <div className="hidden md:block pb-15">
-          <div className="h-[626px] w-250 bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/stage.webp)] bg-contain bg-no-repeat relative">
-            <span className="text-primary text-20 absolute left-[10.5%] top-[4%]">
+          <div className="h-[626px] w-300 bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/stage.webp)] bg-contain bg-no-repeat relative">
+            <span className="text-primary text-20 absolute left-[10%] top-[6%]">
               需求调研
             </span>
             <Image
-              className="absolute left-[12%] top-[12%]"
+              className="absolute left-[11.5%] top-[14%]"
               src="https://ziweiton.oss-cn-hangzhou.aliyuncs.com/icon/fabudiaoyan.webp"
               alt="icon"
               width={50}
               height={50}
             />
-            <span className="text-primary text-20 absolute left-[26%] -top-[4%]">
+            <span className="text-primary text-20 absolute left-[25%] -top-[3%]">
               系统部署
             </span>
             <Image
-              className="absolute left-[28%] top-[5%]"
+              className="absolute left-[26.5%] top-[5%]"
               src="https://ziweiton.oss-cn-hangzhou.aliyuncs.com/icon/deploy.webp"
               alt="icon"
               width={50}
               height={50}
             />
-            <span className="text-primary text-20 absolute left-[46%] -top-[6%]">
+            <span className="text-primary text-20 absolute left-[43%] -top-[6%]">
               售后维护
             </span>
             <Image
-              className="absolute left-[47%] top-[2%]"
+              className="absolute left-[44%] top-[2%]"
               src="https://ziweiton.oss-cn-hangzhou.aliyuncs.com/icon/repair.webp"
               alt="icon"
               width={50}
               height={50}
             />
-            <span className="text-primary text-20 absolute right-[24.5%] -top-[4%]">
+            <span className="text-primary text-20 absolute right-[30%] -top-[3%]">
               系统培训
             </span>
             <Image
-              className="absolute right-[26%] top-[5%]"
+              className="absolute right-[31.5%] top-[5.5%]"
               src="https://ziweiton.oss-cn-hangzhou.aliyuncs.com/icon/cultivate.webp"
               alt="icon"
               width={50}
               height={50}
             />
-            <span className="text-primary text-20 absolute right-[9%] top-[4%]">
+            <span className="text-primary text-20 absolute right-[15%] top-[6%]">
               场景实施
             </span>
             <Image
-              className="absolute right-[10%] top-[12.5%]"
+              className="absolute right-[16.5%] top-[14.5%]"
               src="https://ziweiton.oss-cn-hangzhou.aliyuncs.com/icon/realise.webp"
               alt="icon"
               width={50}
               height={50}
             />
-            <h2 className="text-primary text-center text-3xl font-medium absolute w-full top-[36%]">
+            <h2 className="text-primary text-center text-3xl font-medium absolute w-full top-[40%] -left-[3%]">
               开放集成 灵活定制
             </h2>
-            <div className="text-primary text-20 absolute left-[21.5%] top-[56%] w-10 leading-6">
+            <div className="text-primary text-20 absolute left-[20%] top-[62%] w-10 leading-6">
               资产管理
             </div>
-            <div className="text-primary text-20 absolute left-[49.5%] top-[72%] w-10 leading-6">
+            <div className="text-primary text-20 absolute left-[46.3%] top-[80%] w-10 leading-6">
               财务管理
             </div>
-            <div className="text-primary text-20 absolute right-[18.5%] top-[56%] w-10 leading-6">
+            <div className="text-primary text-20 absolute right-[24%] top-[62.5%] w-10 leading-6">
               盘点管理
             </div>
-            <ul className="text-sm text-white grid grid-cols-1 absolute left-[8%] top-[55%] text-right">
+            <ul className="text-sm text-white grid grid-cols-1 absolute left-[8%] top-[60%] text-right">
               <li>资产采购到报废</li>
               <li>资产标签化贵重</li>
               <li>资产定位</li>
               <li>......</li>
             </ul>
-            <ul className="text-sm text-white grid grid-cols-1 absolute right-[7%] top-[55%] text-left">
+            <ul className="text-sm text-white grid grid-cols-1 absolute right-[14%] top-[60%] text-left">
               <li>一物一码</li>
               <li>全员盘点</li>
               <li>RFID批量盘点</li>
               <li>......</li>
             </ul>
-            <p className="text-sm text-white absolute left-[40%] bottom-[14%] ">
+            <p className="text-sm text-white absolute left-[40%] bottom-[4%] ">
               账实核对、折旧摊销、资产处置......
             </p>
           </div>
-          <div className="mt-3 text-center">
-            <Button href="/prescription" variant="bordered" className="w-87">
+          <div className="mt-15.5 text-center">
+            <Button href="/prescription" variant="bordered" className="w-87 md:h-13.5 md:text-2xl">
               查看解决方案
             </Button>
           </div>
@@ -223,11 +229,11 @@ function HomePage() {
         <ul className="flex gap-4 absolute top-43 left-1/2 -translate-x-1/2">
           {items.map((item, index) => (
             <li
-              className="bg-white rounded inset-shadow-card py-11.5 px-7.5 w-63 h-75 relative"
+              className="bg-white rounded inset-shadow-card py-11.5 px-7.5 w-63 h-90 relative"
               key={index}
             >
-              <h4 className="text-20">{item.label}</h4>
-              <p className="text-sm text-gray mt-3">{item.value}</p>
+              <h4 className="text-28">{item.label}</h4>
+              <p className="text-20 text-gray mt-3">{item.value}</p>
               <Image
                 src={item.icon}
                 alt="icon"
@@ -263,7 +269,7 @@ function HomePage() {
           </ul>
         </div>
       </div>
-      <div className="md:pt-40 bg-white">
+      <div className="md:pt-60 bg-white">
         <FreeTrial />
       </div>
       <CustomerService />

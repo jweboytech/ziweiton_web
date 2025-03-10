@@ -23,6 +23,7 @@
   --text-20: 20px;
   --text-22: 22px;
   --text-28: 28px;
+  --text-34: 34px;
   --text-40: 40px;
 
   /* margin */
@@ -42,8 +43,8 @@
 html,
 body {
   color: var(--color-black);
-  background: #f1f4fe;
-  font-family: Source Han Sans CN;
+  background: var(--color-blue-light);
+  font-family: Microsoft YaHei;
   width: 100vw;
   height: 100vh;
 }
