@@ -35,7 +35,7 @@ const PrescriptionPage = () => {
               alt="icon"
             />
             <div className="bg-white w-full inset-shadow-card rounded-full py-3 px-15 md:px-12 md:py-[102px] flex flex-col md:items-center gap-2 md:gap-5">
-              <h3 className="text-sm md:text-xl text-primary font-bold">
+              <h3 className="text-sm md:text-xl text-black font-bold">
                 丰厚利润
               </h3>
               <ul className="text-xs md:text-sm text-gray flex flex-col gap-1 md:gap-2 md:items-center">
@@ -54,7 +54,7 @@ const PrescriptionPage = () => {
               alt="icon"
             />
             <div className="bg-white w-full inset-shadow-card rounded-full py-3 px-15 md:px-12 md:py-[102px] flex flex-col md:items-center gap-2 md:gap-5">
-              <h3 className="text-sm md:text-xl text-primary font-bold">
+              <h3 className="text-sm md:text-xl text-black font-bold">
                 市场支持
               </h3>
               <ul className="text-xs md:text-sm text-gray flex flex-col gap-1 md:gap-2 md:items-center">
@@ -74,7 +74,7 @@ const PrescriptionPage = () => {
               alt="icon"
             />
             <div className="bg-white w-full inset-shadow-card rounded-full py-3 px-15 md:px-12 md:py-[102px] flex flex-col md:items-center gap-2 md:gap-5">
-              <h3 className="text-sm md:text-xl text-primary font-bold">
+              <h3 className="text-sm md:text-xl text-black font-bold">
                 技术支持
               </h3>
               <ul className="text-xs md:text-sm text-gray flex flex-col gap-1 md:gap-2 md:items-center">

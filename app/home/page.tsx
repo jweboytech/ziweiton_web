@@ -54,7 +54,7 @@ function HomePage() {
         <Title text="专业服务 助力资管降本提效" />
         <div className="hidden md:block pb-15">
           <div className="h-[626px] w-300 bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/stage.webp)] bg-contain bg-no-repeat relative">
-            <span className="text-primary text-20 absolute left-[10%] top-[6%]">
+            <span className="text-black text-2xl font-medium absolute left-[9%] top-[6%]">
               需求调研
             </span>
             <Image
@@ -64,7 +64,7 @@ function HomePage() {
               width={50}
               height={50}
             />
-            <span className="text-primary text-20 absolute left-[25%] -top-[3%]">
+            <span className="text-black text-2xl font-semibold absolute left-[24.5%] -top-[3%]">
               系统部署
             </span>
             <Image
@@ -74,7 +74,7 @@ function HomePage() {
               width={50}
               height={50}
             />
-            <span className="text-primary text-20 absolute left-[43%] -top-[6%]">
+            <span className="text-black text-2xl font-semibold absolute left-[42%] -top-[6%]">
               售后维护
             </span>
             <Image
@@ -84,7 +84,7 @@ function HomePage() {
               width={50}
               height={50}
             />
-            <span className="text-primary text-20 absolute right-[30%] -top-[3%]">
+            <span className="text-black text-2xl font-semibold absolute right-[29.5%] -top-[3%]">
               系统培训
             </span>
             <Image
@@ -94,7 +94,7 @@ function HomePage() {
               width={50}
               height={50}
             />
-            <span className="text-primary text-20 absolute right-[15%] top-[6%]">
+            <span className="text-black text-2xl font-semibold absolute right-[15%] top-[6%]">
               场景实施
             </span>
             <Image
@@ -104,16 +104,16 @@ function HomePage() {
               width={50}
               height={50}
             />
-            <h2 className="text-primary text-center text-3xl font-medium absolute w-full top-[40%] -left-[3%]">
+            <h2 className="text-black text-center text-3xl font-semibold absolute w-full top-[40%] -left-[3%]">
               开放集成 灵活定制
             </h2>
-            <div className="text-primary text-20 absolute left-[20%] top-[62%] w-10 leading-6">
+            <div className="text-black text-20 absolute left-[20%] top-[62%] w-10 leading-6">
               资产管理
             </div>
-            <div className="text-primary text-20 absolute left-[46.3%] top-[80%] w-10 leading-6">
+            <div className="text-black text-20 absolute left-[46.3%] top-[80%] w-10 leading-6">
               财务管理
             </div>
-            <div className="text-primary text-20 absolute right-[24%] top-[62.5%] w-10 leading-6">
+            <div className="text-black text-20 absolute right-[24%] top-[62.5%] w-10 leading-6">
               盘点管理
             </div>
             <ul className="text-sm text-white grid grid-cols-1 absolute left-[8%] top-[60%] text-right">
@@ -133,7 +133,11 @@ function HomePage() {
             </p>
           </div>
           <div className="mt-15.5 text-center">
-            <Button href="/prescription" variant="bordered" className="w-87 md:h-13.5 md:text-2xl">
+            <Button
+              href="/prescription"
+              variant="bordered"
+              className="w-87 h-13.5 text-2xl"
+            >
               查看解决方案
             </Button>
           </div>
@@ -142,7 +146,7 @@ function HomePage() {
       <div className="flex md:hidden flex-col items-center gap-20 pb-18.5">
         <Title text="专业服务 助力资管降本提效" />
         <div className="h-[378px] w-[375px] bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/mobile/stage.webp)] bg-contain bg-no-repeat relative">
-          <span className="text-primary text-xs absolute left-[8%]">
+          <span className="text-black text-xs absolute left-[8%]">
             需求调研
           </span>
           <Image
@@ -152,7 +156,7 @@ function HomePage() {
             width={16}
             height={16}
           />
-          <span className="text-primary text-xs absolute left-[25%] -top-[5%]">
+          <span className="text-black text-xs absolute left-[25%] -top-[5%]">
             系统部署
           </span>
           <Image
@@ -162,7 +166,7 @@ function HomePage() {
             width={16}
             height={16}
           />
-          <span className="text-primary text-xs absolute left-[44%] -top-[6%]">
+          <span className="text-black text-xs absolute left-[44%] -top-[6%]">
             售后维护
           </span>
           <Image
@@ -172,7 +176,7 @@ function HomePage() {
             width={16}
             height={16}
           />
-          <span className="text-primary text-xs absolute right-[22%] -top-[4%]">
+          <span className="text-black text-xs absolute right-[22%] -top-[4%]">
             系统培训
           </span>
           <Image
@@ -182,7 +186,7 @@ function HomePage() {
             width={16}
             height={16}
           />
-          <span className="text-primary text-xs absolute right-[7%] top-0">
+          <span className="text-black text-xs absolute right-[7%] top-0">
             场景实施
           </span>
           <Image
@@ -192,16 +196,16 @@ function HomePage() {
             width={16}
             height={16}
           />
-          <h2 className="text-primary text-center text-xs font-medium absolute w-full top-[22%]">
+          <h2 className="text-black text-center text-xs font-medium absolute w-full top-[22%]">
             开放集成 灵活定制
           </h2>
-          <div className="text-primary text-[10px] absolute left-[18.5%] top-[34%] w-6 leading-3.5">
+          <div className="text-black text-[10px] absolute left-[18.5%] top-[34%] w-6 leading-3.5">
             资产管理
           </div>
-          <div className="text-primary text-[10px] absolute left-[47.5%] top-[43.5%] w-6 leading-3.5">
+          <div className="text-black text-[10px] absolute left-[47.5%] top-[43.5%] w-6 leading-3.5">
             财务管理
           </div>
-          <div className="text-primary text-[10px] absolute right-[18.5%] top-[34%] w-6 leading-3.5">
+          <div className="text-black text-[10px] absolute right-[18.5%] top-[34%] w-6 leading-3.5">
             盘点管理
           </div>
           <ul className=" w-[76px] text-[10px] text-white grid grid-cols-1 absolute left-[12%] top-[66%]">
