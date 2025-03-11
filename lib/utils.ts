@@ -7,7 +7,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function serializateQuery(
-  data: Record<string, any>,
+  data: Record<string, unknown>,
   addQueryPrefix: boolean = true
 ) {
   return QueryString.stringify(data, { addQueryPrefix });

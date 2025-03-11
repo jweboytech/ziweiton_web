@@ -7,15 +7,16 @@ const baseURL = `http://localhost:3600`;
 const http = axios.create({
   baseURL: baseURL,
 });
-const getContentType = (type?: AxiosRequestConfig["method"]) => {
-  switch (type) {
-    case "POST":
-    case "GET":
-      return "application/json";
-    default:
-      return "application/json";
-  }
-};
+
+// const getContentType = (type?: AxiosRequestConfig["method"]) => {
+//   switch (type) {
+//     case "POST":
+//     case "GET":
+//       return "application/json";
+//     default:
+//       return "application/json";
+//   }
+// };
 
 // 发起请求的拦截中间件
 http.interceptors.request.use(
