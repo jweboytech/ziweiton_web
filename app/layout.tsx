@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Script from "next/script";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "紫维通官网",
@@ -30,6 +31,7 @@ export default function RootLayout({
       />
       <body className="antialiased h-screen flex flex-col overflow-hidden">
         <main className="w-full overflow-x-hidden ">{children}</main>
+        <Toaster />
       </body>
     </html>
   );

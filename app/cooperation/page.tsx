@@ -1,11 +1,38 @@
+"use client";
+
 import Button from "@/components/button";
 import CustomerService from "@/components/customerService";
 import Title from "@/components/title";
+import { Form } from "@/components/ui/form";
 import FreeTrial from "@/layout/intro";
+import { postFetcher } from "@/lib/request/fetcher";
 import Image from "next/image";
 import React from "react";
+import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
+import useSWRMutation from "swr/mutation";
 
 const PrescriptionPage = () => {
+  const form1 = useForm();
+  const form2 = useForm();
+  const { trigger } = useSWRMutation("/customer", postFetcher, {
+    onSuccess() {
+      toast.success("提交成功");
+      form1.reset();
+      form2.reset();
+    },
+  });
+
+  const submitForm = (values) => {
+    console.log(values);
+    if (!values.name || !values.phone) {
+      toast.error("请填写完整信息");
+      return;
+    }
+
+    trigger(values);
+  };
+
   return (
     <React.Fragment>
       <div className="relative bg-white h-[172px] md:h-[350px] pl-6.5 pt-16.5 md:px-100 md:pt-32  bg-cover md:bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner3.webp)]">
@@ -258,11 +285,15 @@ const PrescriptionPage = () => {
           <div className="flex">
             {/* <div className=" w-0 h-0 border-t-[210px] border-t-transparent border-r-[210px] border-r-white" /> */}
             <div className="bg-white py-14 px-30">
-              <form className="grid grid-cols-1 gap-3">
+              <form
+                className="grid grid-cols-1 gap-3"
+                onSubmit={form1.handleSubmit(submitForm)}
+              >
                 <div className="grid grid-cols-2 gap-4.5">
                   <div className="flex items-center gap-5.5 border border-[#E5E5E5]/80 bg-blue-light rounded py-2.5 px-3.5">
                     <label className="text-sm min-w-16">您的姓名</label>
                     <input
+                      {...form1.register("name")}
                       className="outline-none placeholder:text-gray placeholder:text-sm flex-1"
                       placeholder="请输入"
                     />
@@ -270,12 +301,15 @@ const PrescriptionPage = () => {
                   <div className="flex items-center gap-5.5 border border-[#E5E5E5]/80 bg-blue-light rounded py-2.5 px-3.5">
                     <label className="text-sm min-w-16">联系电话</label>
                     <input
+                      {...form1.register("phone")}
                       className="outline-none placeholder:text-gray placeholder:text-sm flex-1"
                       placeholder="请输入"
                     />
                   </div>
                 </div>
-                <Button fullWidth>提交</Button>
+                <Button fullWidth type="submit">
+                  提交
+                </Button>
               </form>
             </div>
           </div>
@@ -336,11 +370,15 @@ const PrescriptionPage = () => {
           </ul>
           <div className="px-4 h-54 relative mt-3">
             <div className="bg-white w-full h-full py-8 px-4 ">
-              <form className="grid grid-cols-1 gap-3 ">
+              <form
+                className="grid grid-cols-1 gap-3 "
+                onSubmit={form2.handleSubmit(submitForm)}
+              >
                 <div className="flex flex-col md:flex-wrap  gap-4.5 h-11">
                   <div className="flex items-center gap-5.5 border border-[#E5E5E5]/80 bg-blue-light rounded py-2.5 px-3.5">
                     <label className="text-sm min-w-16">您的姓名</label>
                     <input
+                      {...form2.register("name")}
                       className="outline-none placeholder:text-gray placeholder:text-sm flex-1"
                       placeholder="请输入"
                     />
@@ -348,11 +386,14 @@ const PrescriptionPage = () => {
                   <div className="flex items-center gap-5.5 border border-[#E5E5E5]/80 bg-blue-light rounded py-2.5 px-3.5 h-11">
                     <label className="text-sm  min-w-16">联系电话</label>
                     <input
+                      {...form2.register("phone")}
                       className="outline-none placeholder:text-gray placeholder:text-sm flex-1 h-11"
                       placeholder="请输入"
                     />
                   </div>
-                  <Button fullWidth>提交</Button>
+                  <Button fullWidth type="submit">
+                    提交
+                  </Button>
                 </div>
               </form>
             </div>

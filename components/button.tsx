@@ -57,12 +57,21 @@ export interface ButtonProps
   fullWidth?: boolean;
 }
 
-const Button = ({ children, href, variant, className }: ButtonProps) => {
+const Button = ({
+  children,
+  href,
+  variant,
+  className,
+  fullWidth,
+  ...restProps
+}: ButtonProps) => {
   const Comp = () => (
     <button
+      {...restProps}
       className={cn(
         buttonVariants({
           variant,
+          fullWidth,
         }),
         className
       )}
