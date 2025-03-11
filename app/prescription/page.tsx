@@ -8,8 +8,8 @@ const PrescriptionPage = () => {
   return (
     <React.Fragment>
       <div className="bg-white">
-        <div className="hidden md:flex px-100 pt-32 h-87.5 flex-col bg-contain bg-no-repeat bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner3.webp)]">
-          <h2 className="text-28">
+        <div className="hidden md:flex h-104 px-100 pt-32 flex-col bg-cover bg-no-repeat bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner3.webp)]">
+          <h2 className="text-34 text-white">
             多场景解决方案
             <br />
             助力企业提升资产管理效率

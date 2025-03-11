@@ -9,8 +9,10 @@ const PrescriptionPage = () => {
   return (
     <React.Fragment>
       <div className="relative bg-white h-[172px] md:h-[350px] pl-6.5 pt-16.5 md:px-100 md:pt-32  bg-cover md:bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner3.webp)]">
-        <h2 className="text-sm md:text-28 mb-4">携手共赢 共创未来</h2>
-        <p className="text-xs md:text-base text-gray">
+        <h2 className="text-sm md:text-34 mb-4 md:text-white">
+          携手共赢 共创未来
+        </h2>
+        <p className="text-xs text-gray md:text-2xl md:text-white">
           不管您是组织还是个人 <br />
           紫维通诚邀您立即加入 开启财富之路
         </p>
@@ -35,10 +37,10 @@ const PrescriptionPage = () => {
               alt="icon"
             />
             <div className="bg-white w-full inset-shadow-card rounded-full py-3 px-15 md:px-12 md:py-[102px] flex flex-col md:items-center gap-2 md:gap-5">
-              <h3 className="text-sm md:text-xl text-black font-bold">
+              <h3 className="text-sm md:text-28 text-black font-bold">
                 丰厚利润
               </h3>
-              <ul className="text-xs md:text-sm text-gray flex flex-col gap-1 md:gap-2 md:items-center">
+              <ul className="text-xs md:text-20 text-gray flex flex-col gap-1 md:gap-2 md:items-center">
                 <li>0成本投入</li>
                 <li>高额佣金与返点政策</li>
                 <li>确保合作伙伴收益最大化</li>
@@ -54,10 +56,10 @@ const PrescriptionPage = () => {
               alt="icon"
             />
             <div className="bg-white w-full inset-shadow-card rounded-full py-3 px-15 md:px-12 md:py-[102px] flex flex-col md:items-center gap-2 md:gap-5">
-              <h3 className="text-sm md:text-xl text-black font-bold">
+              <h3 className="text-sm md:text-28 text-black font-bold">
                 市场支持
               </h3>
-              <ul className="text-xs md:text-sm text-gray flex flex-col gap-1 md:gap-2 md:items-center">
+              <ul className="text-xs md:text-20 text-gray flex flex-col gap-1 md:gap-2 md:items-center">
                 <li>完善的区域保护机制</li>
                 <li>总部的商机线索按地域分配</li>
                 <li>帮助合作伙伴获得更多订单</li>
@@ -74,10 +76,10 @@ const PrescriptionPage = () => {
               alt="icon"
             />
             <div className="bg-white w-full inset-shadow-card rounded-full py-3 px-15 md:px-12 md:py-[102px] flex flex-col md:items-center gap-2 md:gap-5">
-              <h3 className="text-sm md:text-xl text-black font-bold">
+              <h3 className="text-sm md:text-28 text-black font-bold">
                 技术支持
               </h3>
-              <ul className="text-xs md:text-sm text-gray flex flex-col gap-1 md:gap-2 md:items-center">
+              <ul className="text-xs md:text-20 text-gray flex flex-col gap-1 md:gap-2 md:items-center">
                 <li>全面支持，助力高效成单</li>
                 <li>专属技术团队提供售前咨询</li>
                 <li>实施部署与售后服务</li>
@@ -154,9 +156,9 @@ const PrescriptionPage = () => {
               />
               <div className="bg-blue-light w-[1px] h-[156px] relative" />
             </div>
-            <div className="flex flex-col gap-3 w-52.5">
-              <h3 className="text-20">有企业</h3>
-              <p className="text-gray text-sm">
+            <div className="flex flex-col gap-3 w-65">
+              <h3 className="text-28">有企业</h3>
+              <p className="text-gray text-20">
                 比如您是客户经理，销售，管理咨询顾问，企业培训，商协会、产业园区管理者。
               </p>
             </div>
@@ -172,9 +174,9 @@ const PrescriptionPage = () => {
               />
               <div className="bg-blue-light w-[1px] h-[188px] relative" />
             </div>
-            <div className="flex flex-col gap-3 w-52.5">
-              <h3 className="text-20">有行政财会资源</h3>
-              <p className="text-gray text-sm">
+            <div className="flex flex-col gap-3 w-65">
+              <h3 className="text-28">有行政财会资源</h3>
+              <p className="text-gray text-20">
                 拥有有丰富的人脉，比如行政、采购、会计、技术人员、仓管.会涉及资产管理工作的人脉。
               </p>
             </div>
@@ -190,9 +192,9 @@ const PrescriptionPage = () => {
               />
               <div className="bg-blue-light w-[1px] h-[156px] relative" />
             </div>
-            <div className="flex flex-col gap-3 w-52.5">
-              <h3 className="text-20">有丰富的销售网络</h3>
-              <p className="text-gray text-sm">
+            <div className="flex flex-col gap-3 w-65">
+              <h3 className="text-28">有丰富的销售网络</h3>
+              <p className="text-gray text-20">
                 拥有自己的销售网络，如分销、代理等。
               </p>
             </div>
@@ -201,7 +203,7 @@ const PrescriptionPage = () => {
       </div>
       <div className="hidden md:block pt-13 pb-16.5 h-[388px] bg-primary bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner6.webp)] bg-no-repeat bg-contain relative">
         <Title text="伙伴申请流程" className="mb-12" theme="white" />
-        <div className="absolute right-0 bottom-16.5 flex gap-4 items-center">
+        <div className="absolute w-full right-0 bottom-14 flex gap-4 items-cente  justify-between pl-20">
           <div className="grid grid-cols-1 gap-1">
             <ul className="flex items-center gap-1">
               <li className="flex items-center gap-6">
@@ -246,16 +248,16 @@ const PrescriptionPage = () => {
                 </div>
               </li>
             </ul>
-            <ul className="flex items-center gap-10 text-white text-20">
-              <li className="-ml-3">提交申请</li>
-              <li className="ml-3">洽谈合作</li>
-              <li className="ml-5">签约授权</li>
-              <li className="ml-5">携手共赢</li>
+            <ul className="flex items-center gap-10 text-white text-20 h-fit -ml-4">
+              <li className="min-w-25">提交申请</li>
+              <li className="min-w-25">洽谈合作</li>
+              <li className="min-w-25">签约授权</li>
+              <li className="min-w-25">携手共赢</li>
             </ul>
           </div>
           <div className="flex">
-            <div className=" w-0 h-0 border-t-[210px] border-t-transparent border-r-[210px] border-r-white" />
-            <div className="bg-white py-14 pr-30">
+            {/* <div className=" w-0 h-0 border-t-[210px] border-t-transparent border-r-[210px] border-r-white" /> */}
+            <div className="bg-white py-14 px-30">
               <form className="grid grid-cols-1 gap-3">
                 <div className="grid grid-cols-2 gap-4.5">
                   <div className="flex items-center gap-5.5 border border-[#E5E5E5]/80 bg-blue-light rounded py-2.5 px-3.5">

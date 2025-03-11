@@ -27,9 +27,9 @@ const Section = ({ title, items }: SectionProps) => {
                   alt={item.title}
                   className="w-21 h-21 md:w-45 md:h-45"
                 />
-                <div className="flex flex-col gap-1.5 md:items-center">
-                  <span className="text-sm md:text-20">{item.title}</span>
-                  <p className="text-xs md:text-sm text-gray">
+                <div className="flex flex-col gap-1.5 md:px-2.5 md:items-center">
+                  <span className="text-sm md:text-28">{item.title}</span>
+                  <p className="text-xs md:text-20 text-gray">
                     {item.description}
                   </p>
                 </div>

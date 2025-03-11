@@ -67,10 +67,12 @@ const items: Array<Option> = [
 const ProductPage = () => {
   return (
     <div>
-      <div className="hidden md:flex py-11 px-80 bg-white flex-col bg-contain bg-no-repeat bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner3.webp)]">
-        <div className="flex flex-col gap-3">
-          <h2 className="text-28">企业资产实现数字化全生命周期管理</h2>
-          <ul className="text-base text-gray flex gap-2 items-center">
+      <div className="hidden md:flex h-104 py-14 px-80 bg-white flex-col bg-cover bg-no-repeat bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner3.webp)]">
+        <div className="flex flex-col gap-1">
+          <h2 className="text-34 text-white">
+            企业资产实现数字化全生命周期管理
+          </h2>
+          <ul className="text-2xl text-white flex gap-2 items-center">
             <li className="relative after:content-[''] after:block  after:h-4 after:w-[1px] after:absolute after:-right-1 after:top-1 after:bg-gray">
               全行业通用
             </li>
@@ -131,7 +133,7 @@ const ProductPage = () => {
       <div className="grid-cols-2 h-[504px] hidden md:grid">
         <div className="bg-white relative">
           <div className="absolute left-40 top-20 z-10">
-            <h3 className="text-28 mb-10 inline-flex gap-2 items-center">
+            <h3 className="text-34 mb-10 inline-flex gap-2 items-center">
               资产数智化平台核心解决方案
               <Image
                 src="https://ziweiton.oss-cn-hangzhou.aliyuncs.com/slash.png"
@@ -146,24 +148,24 @@ const ProductPage = () => {
         </div>
         <div className="bg-blue relative bg-cover bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner4.webp)]">
           <div className="absolute left-16 top-50">
-            <h3 className="text-white text-20 relative mb-5">
+            <h3 className="text-white text-28 relative mb-5">
               贵重资产定位防丢失
             </h3>
             <ul className="text-white list-disc flex flex-col gap-2">
               <li className="inline-flex gap-2 items-center">
-                <div className="bg-warning w-2 h-2 rounded-full text-sm" />
+                <div className="bg-warning w-2 h-2 rounded-full text-20" />
                 <span>
                   通过定位技术，实现高精度的室内定位，为资产轨迹监管提供技术支持。
                 </span>
               </li>
               <li className="inline-flex gap-2 items-center">
-                <div className="bg-warning w-2 h-2 rounded-full text-sm" />
+                <div className="bg-warning w-2 h-2 rounded-full text-20" />
                 <span>
                   设置电子围栏，当资产离开指定区域时，系统会自动报警，提醒管理人员注意。
                 </span>
               </li>
               <li className="inline-flex gap-2 items-center">
-                <div className="bg-warning w-2 h-2 rounded-full text-sm" />
+                <div className="bg-warning w-2 h-2 rounded-full text-20" />
                 <span>
                   系统实时监控资产的位置，记录资产的历史移动轨迹，方便管理人员进行回溯和查询。
                 </span>
@@ -175,8 +177,8 @@ const ProductPage = () => {
       <div className="py-12.5 px-40 ] hidden md:block">
         <div className="flex justify-center gap-7.5">
           <div className="flex flex-col gap-8 w-120 justify-center">
-            <h3 className="text-20">多种盘点方式 极大提升盘点效率</h3>
-            <ul className="flex flex-col gap-3 text-gray text-sm">
+            <h3 className="text-28">多种盘点方式 极大提升盘点效率</h3>
+            <ul className="flex flex-col gap-3 text-gray text-20">
               <li className="inline-flex gap-2 items-center">
                 <div className="bg-blue w-2 h-2 rounded-full" />
                 <span>支持全员盘点，扫码盘点，异地盘点，RFID盘点。</span>
@@ -197,9 +199,9 @@ const ProductPage = () => {
       <div className="py-12.5 px-40 bg-white  hidden md:block">
         <div className="flex justify-center gap-7.5">
           <div className="bg-gray-dark w-154 h-62.5 bg-cover bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/life_cycle.webp)]" />
-          <div className="flex flex-col gap-8 w-120 justify-center">
-            <h3 className="text-20">固定资产全生命周期管理</h3>
-            <ul className="flex flex-col gap-3 text-gray text-sm">
+          <div className="flex flex-col gap-8 w-140 justify-center">
+            <h3 className="text-28">固定资产全生命周期管理</h3>
+            <ul className="flex flex-col gap-3 text-gray text-20">
               <li className="inline-flex gap-2 items-start">
                 <div className="bg-warning w-2 h-2 rounded-full mt-1" />
                 <div className="flex-1">
@@ -235,20 +237,20 @@ const ProductPage = () => {
       <div className="py-12.5 px-40  hidden md:block">
         <div className="flex justify-center gap-7.5">
           <div className="flex flex-col gap-8 w-120 justify-center">
-            <h3 className="text-20 ">资产数据智能分析</h3>
-            <ul className="flex flex-col gap-3 text-gray text-sm">
+            <h3 className="text-28">资产数据智能分析</h3>
+            <ul className="flex flex-col gap-3 text-gray text-20">
               <li className="inline-flex gap-2 items-start">
-                <div className="bg-blue w-2 h-2 rounded-full text-sm mt-[6px]" />
+                <div className="bg-blue w-2 h-2 rounded-full mt-[6px]" />
                 <span>资产数据实时更新，方便掌握最新动态。</span>
               </li>
               <li className="inline-flex gap-2 items-start">
-                <div className="bg-blue w-2 h-2 rounded-full text-sm mt-[6px]" />
+                <div className="bg-blue w-2 h-2 rounded-full mt-[6px]" />
                 <span>
                   台账清晰、记录完整，企业资产情况一目了然，快速定位闲置资产，维护、折旧成本实时掌握。
                 </span>
               </li>
               <li className="inline-flex gap-2 items-start">
-                <div className="bg-blue w-2 h-2 rounded-full text-sm mt-[6px]" />
+                <div className="bg-blue w-2 h-2 rounded-full mt-[6px]" />
                 <span>
                   数据查阅范围支持自定义角色权限，保证资产管理信息安全，避免未经授权的操作。{" "}
                 </span>

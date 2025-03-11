@@ -70,7 +70,7 @@ const IndustrySolutions = () => {
               <span
                 className={clsx(
                   activeKey === item.value ? "text-primary" : "text-gray",
-                  "text-sm"
+                  "text-base"
                 )}
               >
                 {item.label}
@@ -123,9 +123,9 @@ const IndustrySolutions = () => {
                 height={40}
                 alt="icon"
               />
-              <div>
-                <h3 className="text-sm md:text-20">{item.title}</h3>
-                <p className="text-xs md:text-sm text-gray">
+              <div className="flex flex-col gap-3">
+                <h3 className="text-sm md:text-28">{item.title}</h3>
+                <p className="text-xs md:text-20 text-gray">
                   {item.description}
                 </p>
               </div>
