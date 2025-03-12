@@ -33,7 +33,7 @@ const PrescriptionPage = () => {
         <IndustrySolutions />
         <FreeTrial />
       </div>
-      <CustomerService />
+      {/* <CustomerService /> */}
     </React.Fragment>
   );
 };

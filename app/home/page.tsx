@@ -276,7 +276,7 @@ function HomePage() {
       <div className="md:pt-60 bg-white">
         <FreeTrial />
       </div>
-      <CustomerService />
+      {/* <CustomerService /> */}
     </div>
   );
 }
