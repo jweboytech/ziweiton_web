@@ -381,7 +381,7 @@ const ProductPage = () => {
         </Link>
       </div>
       <FreeTrial />
-      {/* <CustomerService /> */}
+      <CustomerService />
     </div>
   );
 };

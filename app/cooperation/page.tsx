@@ -401,7 +401,7 @@ const PrescriptionPage = () => {
         </div>
       </div>
       <FreeTrial />
-      {/* <CustomerService /> */}
+      <CustomerService />
     </React.Fragment>
   );
 };
