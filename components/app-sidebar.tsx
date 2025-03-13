@@ -11,6 +11,7 @@ import {
   SidebarMenuItem,
   SidebarRail,
 } from "@/components/ui/sidebar";
+import Logo from "@/layout/logo";
 
 // This is sample data.
 const data = {
@@ -26,7 +27,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar {...props}>
       <SidebarHeader className="p-4">
-        <span className="uppercase text-2xl font-medium">logo</span>
+        <Logo />
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>

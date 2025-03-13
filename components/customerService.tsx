@@ -44,7 +44,7 @@ const CustomerService = () => {
                 size={104}
               /> */}
               <Image
-                src="https://ziweiton.oss-cn-hangzhou.aliyuncs.com/logo/customer_qrcode.jpg"
+                src="https://ziweiton.oss-cn-hangzhou.aliyuncs.com/customer_qrcode.jpg"
                 alt="qrcode"
                 width={104}
                 height={104}

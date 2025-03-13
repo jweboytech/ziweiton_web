@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import Logo from "./logo";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -37,7 +38,7 @@ const Sidebar = () => {
         >
           <ul>
             <li className="py-4.5 pl-7 pr-3.5 flex items-center justify-between">
-              <span className="uppercase text-white ">logo</span>
+              <Logo />
               <Image
                 src="https://ziweiton.oss-cn-hangzhou.aliyuncs.com/icon/close.webp"
                 width={12}
