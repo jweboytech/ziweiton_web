@@ -2,7 +2,6 @@ import axios, { AxiosRequestConfig } from "axios";
 import toast from "react-hot-toast";
 
 const baseURL = `http://localhost:3600`;
-// export const baseURL = "https://test-api.hostmix.ai/api";
 
 const http = axios.create({
   baseURL: baseURL,

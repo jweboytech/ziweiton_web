@@ -34,7 +34,7 @@ const buttonVariants = cva(
         false: "", // 正常按钮的样式，不做额外处理
       },
       fullWidth: {
-        true: "w-full h-14",
+        true: "w-full h-9 md:h-14",
         false: "",
       },
       ghost: {

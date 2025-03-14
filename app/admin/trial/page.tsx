@@ -15,6 +15,7 @@ import dayjs from "dayjs";
 import {
   Dialog,
   DialogContent,
+  DialogDescription,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
@@ -27,8 +28,8 @@ function CustomerPage() {
   const [remark, setRemark] = React.useState("");
   const [isOpen, setIsOpen] = React.useState(false);
   const recordRef = React.useRef({});
-  const { data, mutate } = useSWR("/customer/all", getFetcher);
-  const { trigger } = useSWRMtation("/customer", putFetcher, {
+  const { data, mutate } = useSWR("/trial/all", getFetcher);
+  const { trigger } = useSWRMtation("/trial", putFetcher, {
     onSuccess() {
       mutate();
       setIsOpen(false);

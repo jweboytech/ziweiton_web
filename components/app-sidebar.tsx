@@ -20,6 +20,10 @@ const data = {
       title: "客户管理",
       url: "/admin/customer",
     },
+    {
+      title: "试用管理",
+      url: "/admin/trial",
+    },
   ],
 };
 
