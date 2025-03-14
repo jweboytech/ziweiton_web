@@ -3,7 +3,6 @@
 import Image from "next/image";
 import React from "react";
 import Logo from "./logo";
-import { QRCodeCanvas } from "qrcode.react";
 
 const Footer = () => {
   return (
@@ -33,25 +32,20 @@ const Footer = () => {
               alt="qrcode"
               width={104}
               height={104}
+              className="md:w-20 md:h-20"
             />
           </div>
           <span className="text-white text-xs md:text-base">诚邀代理</span>
         </div>
         <div className="flex flex-col gap-3 md:gap-2 items-center">
           <div className="bg-white px-2 pt-2 w-22.5 h-22.5 md:w-24.5 md:h-24.5">
-            <div className="bg-gray-dark" />
-            <div className="hidden md:block">
-              <QRCodeCanvas
-                value="https://affim.baidu.com/unique_65013548/chat?siteId=21739000&userId=65013548&siteToken=fdf1089f105d50981143f389f1a250dd"
-                size={80}
-              />
-            </div>
-            <div className="block md:hidden">
-              <QRCodeCanvas
-                value="https://affim.baidu.com/unique_65013548/chat?siteId=21739000&userId=65013548&siteToken=fdf1089f105d50981143f389f1a250dd"
-                size={74}
-              />
-            </div>
+            <Image
+              src="https://ziweiton.oss-cn-hangzhou.aliyuncs.com/customer_qrcode.jpg"
+              alt="qrcode"
+              width={104}
+              height={104}
+              className="md:w-20 md:h-20"
+            />
           </div>
           <span className="text-white text-xs md:text-base">客服咨询</span>
         </div>

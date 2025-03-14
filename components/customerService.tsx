@@ -46,6 +46,7 @@ const CustomerService = () => {
               <Image
                 src="https://ziweiton.oss-cn-hangzhou.aliyuncs.com/customer_qrcode.jpg"
                 alt="qrcode"
+                className="w-28 h-28"
                 width={104}
                 height={104}
               />
