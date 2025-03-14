@@ -8,22 +8,22 @@ import React from "react";
 const items: Array<Option & { icon: string }> = [
   {
     label: "资深团队",
-    value: "深根资产云管理领域xx年，平均从业经验xx年。",
+    value: "深耕资产管理领域多年，平均从业经验10年",
     icon: "https://ziweiton.oss-cn-hangzhou.aliyuncs.com/introduce1.webp",
   },
   {
     label: "行业经验丰富",
-    value: "具有全行业全场景解决方案服务经验，覆盖互联网、制造业、零售等行业。",
+    value: "具有全行业全场景解决方案服务经验，覆盖互联网、制造业、零售等行业",
     icon: "https://ziweiton.oss-cn-hangzhou.aliyuncs.com/introduce2.webp",
   },
   {
     label: "贴心部署",
-    value: "管家式实施部署，助力无忧上线助力企业快速实现资产管理数智化。",
+    value: "管家式实施部署，助力无忧上线助力企业快速实现资产管理数智化",
     icon: "https://ziweiton.oss-cn-hangzhou.aliyuncs.com/introduce3.webp",
   },
   {
     label: "售后无忧",
-    value: "专业售后团队7*24支持，快速响应，为您的资管保驾护航。",
+    value: "专业售后团队7*24支持，快速响应，为您的资管保驾护航",
     icon: "https://ziweiton.oss-cn-hangzhou.aliyuncs.com/introduce4.webp",
   },
 ];
@@ -34,7 +34,7 @@ function HomePage() {
       <div className="pt-14 md:pt-50 pb-15 md:h-[908px] bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/mobile/banner1.webp)] md:bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner1.webp)] bg-white bg-cover bg-no-repeat">
         <div className="flex flex-col gap-3 md:gap-6">
           <h2 className="text-[#0C1E58] text-20 md:text-[62px] text-center font-medium">
-            紫维通·专业资产管理云平台
+            紫维通·专业资产管理平台
           </h2>
           <h3 className="text-gray text-xs md:text-[34px] text-center">
             实现资产数智化、精细化、全生命周期管理
@@ -116,20 +116,18 @@ function HomePage() {
             <div className="text-black text-20 absolute right-[24%] top-[62.5%] w-10 leading-6">
               盘点管理
             </div>
-            <ul className="text-sm text-white grid grid-cols-1 absolute left-[8%] top-[60%] text-right">
+            <ul className="text-sm text-white grid grid-cols-1 absolute left-[8%] top-[60%] text-left">
               <li>资产采购到报废</li>
               <li>资产标签化贵重</li>
               <li>资产定位</li>
-              <li>......</li>
             </ul>
             <ul className="text-sm text-white grid grid-cols-1 absolute right-[14%] top-[60%] text-left">
               <li>一物一码</li>
-              <li>全员盘点</li>
-              <li>RFID批量盘点</li>
-              <li>......</li>
+              <li>支持全员盘点</li>
+              <li>RFID高效盘点</li>
             </ul>
             <p className="text-sm text-white absolute left-[40%] bottom-[4%] ">
-              账实核对、折旧摊销、资产处置......
+              账实核对、折旧摊销、资产处置
             </p>
           </div>
           <div className="mt-15.5 text-center">
@@ -212,19 +210,16 @@ function HomePage() {
             <li>资产采购到报废</li>
             <li>资产标签化贵重</li>
             <li>资产定位</li>
-            <li>......</li>
           </ul>
           <ul className="text-[10px] w-11 text-white absolute left-[44%] bottom-[14%] ">
             <li>账实核对</li>
             <li>折旧摊销</li>
             <li>资产处置</li>
-            <li>......</li>
           </ul>
           <ul className="text-[10px] text-white grid grid-cols-1 absolute right-[12%] top-[64%] text-left">
             <li>一物一码</li>
-            <li>全员盘点</li>
-            <li>RFID批量盘点</li>
-            <li>......</li>
+            <li>支持全员盘点</li>
+            <li>RFID高效盘点</li>
           </ul>
         </div>
       </div>

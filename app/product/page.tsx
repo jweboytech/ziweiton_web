@@ -129,7 +129,7 @@ const ProductPage = () => {
           ))}
         </ul>
       </div>
-      <Title text="资产数字化平台版本对比" className="py-5 md:py-12" />
+      <Title text="固定资产管理数智化" className="py-5 md:py-12" />
       <div className="grid-cols-2 h-[504px] hidden md:grid">
         <div className="bg-white relative">
           <div className="absolute left-40 top-20 z-10">

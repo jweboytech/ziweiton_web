@@ -35,7 +35,7 @@ const Footer = () => {
               height={104}
             />
           </div>
-          <span className="text-white text-xs md:text-base">商务合作</span>
+          <span className="text-white text-xs md:text-base">诚邀代理</span>
         </div>
         <div className="flex flex-col gap-3 md:gap-2 items-center">
           <div className="bg-white px-2 pt-2 w-22.5 h-22.5 md:w-24.5 md:h-24.5">
