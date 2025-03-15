@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./navbar";
 import Button from "@/components/button";
 import Logo from "./logo";
+import FreeTrial from "./intro";
 
 const Header = () => {
   return (
@@ -10,9 +11,11 @@ const Header = () => {
         <Logo />
       </div>
       <Navbar />
-      <Button href="/" variant="gradient" className="w-46.5">
-        免费试用
-      </Button>
+      <FreeTrial>
+        <Button variant="gradient" className="w-46.5">
+          免费试用
+        </Button>
+      </FreeTrial>
     </div>
   );
 };

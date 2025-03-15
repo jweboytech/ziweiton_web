@@ -1,5 +1,5 @@
 interface BaseProps {
-  children: React.ReactElement | text;
+  children?: React.ReactElement | text;
 }
 
 interface Option {

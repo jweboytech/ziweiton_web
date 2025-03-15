@@ -9,12 +9,13 @@ import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import useSWRMutation from "swr/mutation";
 
-const FreeTrial = () => {
+const FreeTrial = ({ children }: BaseProps) => {
   const form = useForm();
   const [isOpen, setIsOpen] = React.useState(false);
   const [isOk, setIsOk] = React.useState(false);
   const { trigger } = useSWRMutation("/trial", postFetcher, {
     onSuccess() {
+      toast.success("提交成功");
       form.reset();
       setIsOk(true);
     },
@@ -38,18 +39,22 @@ const FreeTrial = () => {
 
   return (
     <React.Fragment>
-      <div className="bg-white pt-6 pb-2.5 md:py-16.5 flex flex-col gap-4 md:gap-7.5 justify-center items-center">
-        <p className="text-sm md:text-28 text-center">
-          仅需手机号即可免费试用，帮您减少资产闲置，简单又好上手
-        </p>
-        <Button
-          variant="gradient"
-          className="md:text-2xl md:w-46.5"
-          onClick={toggleStatus}
-        >
-          免费试用
-        </Button>
-      </div>
+      {children ? (
+        React.cloneElement(children, { onClick: toggleStatus })
+      ) : (
+        <div className="bg-white pt-6 pb-2.5 md:py-16.5 flex flex-col gap-4 md:gap-7.5 justify-center items-center">
+          <p className="text-sm md:text-28 text-center">
+            仅需手机号即可免费试用，帮您减少资产闲置，简单又好上手
+          </p>
+          <Button
+            variant="gradient"
+            className="md:text-2xl md:w-46.5"
+            onClick={toggleStatus}
+          >
+            免费试用
+          </Button>
+        </div>
+      )}
       <div
         className={clsx(
           "fixed w-screen h-screen bg-black/45 left-0 top-0 transition-all duration-300 ease-in-out",

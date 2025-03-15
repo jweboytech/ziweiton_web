@@ -118,8 +118,8 @@ function HomePage() {
             </div>
             <ul className="text-sm text-white grid grid-cols-1 absolute left-[8%] top-[60%] text-left">
               <li>资产采购到报废</li>
-              <li>资产标签化贵重</li>
               <li>资产定位</li>
+              <li>资产标签化贵重</li>
             </ul>
             <ul className="text-sm text-white grid grid-cols-1 absolute right-[14%] top-[60%] text-left">
               <li>一物一码</li>
@@ -208,8 +208,8 @@ function HomePage() {
           </div>
           <ul className=" w-[76px] text-[10px] text-white grid grid-cols-1 absolute left-[12%] top-[66%]">
             <li>资产采购到报废</li>
-            <li>资产标签化贵重</li>
             <li>资产定位</li>
+            <li>资产标签化贵重</li>
           </ul>
           <ul className="text-[10px] w-11 text-white absolute left-[44%] bottom-[14%] ">
             <li>账实核对</li>
