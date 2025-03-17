@@ -1,7 +1,8 @@
 import axios, { AxiosRequestConfig } from "axios";
 import toast from "react-hot-toast";
 
-const baseURL = `http://localhost:3600`;
+// const baseURL = `http://localhost:3600`;
+const baseURL = "https://ziviton-api.jweboy.online";
 
 const http = axios.create({
   baseURL: baseURL,
