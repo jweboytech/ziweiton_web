@@ -57,19 +57,18 @@ const FreeTrial = ({ children }: BaseProps) => {
       )}
       <div
         className={clsx(
-          "fixed w-screen h-screen bg-black/45 left-0 top-0 transition-all duration-300 ease-in-out",
-          isOpen ? "opacity-100 z-100" : "opacity-0 -z-10"
+          "fixed bg-black/45 left-0 top-0 transition-all duration-300 ease-in-out",
+          isOpen
+            ? "opacity-100 z-100 w-screen h-screen"
+            : "opacity-0 -z-100 w-0 h-0"
         )}
       >
-        <div className="bg-white rounded-lg left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 absolute w-4/5 md:w-120 p-6">
-          <X
-            className={clsx(
-              "absolute right-6 top-6 cursor-pointer",
-              !isOk ? "block" : "hidden"
-            )}
-            onClick={toggleStatus}
-          />
-          {!isOk ? (
+        {!isOk ? (
+          <div className="bg-white rounded-lg left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 absolute w-4/5 md:w-120 p-6">
+            <X
+              className={clsx("absolute right-6 top-6 cursor-pointer")}
+              onClick={toggleStatus}
+            />
             <form
               className="grid grid-cols-1 gap-3 "
               onSubmit={form.handleSubmit(submitForm)}
@@ -97,7 +96,9 @@ const FreeTrial = ({ children }: BaseProps) => {
                 </Button>
               </div>
             </form>
-          ) : (
+          </div>
+        ) : (
+          <div className="bg-white rounded-lg left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 absolute w-4/5 md:w-120 p-6">
             <div>
               <h2 className="font-medium tex-base md:text-2xl text-center">
                 提交成功
@@ -109,8 +110,8 @@ const FreeTrial = ({ children }: BaseProps) => {
                 确定
               </Button>
             </div>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </React.Fragment>
   );
