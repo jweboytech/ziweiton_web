@@ -68,9 +68,9 @@ const PrescriptionPage = () => {
                 丰厚利润
               </h3>
               <ul className="text-xs md:text-20 text-gray flex flex-col gap-1 md:gap-2 md:items-center">
-                <li>0成本投入</li>
-                <li>高额佣金与返点政策</li>
-                <li>确保合作伙伴收益最大化</li>
+                <li>助力年入百万</li>
+                <li>高额丰厚的佣金</li>
+                <li>额外阶梯式奖励</li>
               </ul>
             </div>
           </li>
@@ -87,9 +87,9 @@ const PrescriptionPage = () => {
                 市场支持
               </h3>
               <ul className="text-xs md:text-20 text-gray flex flex-col gap-1 md:gap-2 md:items-center">
-                <li>完善的区域保护机制</li>
-                <li>总部的商机线索按地域分配</li>
-                <li>帮助合作伙伴获得更多订单</li>
+                <li>官网宣传</li>
+                <li>商机转交</li>
+                <li>市场活动费用支持</li>
               </ul>
             </div>
           </li>
@@ -104,12 +104,12 @@ const PrescriptionPage = () => {
             />
             <div className="bg-white w-full inset-shadow-card rounded-full py-3 px-15 md:px-12 md:py-[102px] flex flex-col md:items-center gap-2 md:gap-5">
               <h3 className="text-sm md:text-28 text-black font-bold">
-                技术支持
+                深度陪跑
               </h3>
               <ul className="text-xs md:text-20 text-gray flex flex-col gap-1 md:gap-2 md:items-center">
-                <li>全面支持，助力高效成单</li>
-                <li>专属技术团队提供售前咨询</li>
-                <li>实施部署与售后服务</li>
+                <li>项目售前支持</li>
+                <li>特价深度支持</li>
+                <li>商机进度跟进讨论</li>
               </ul>
             </div>
           </li>
