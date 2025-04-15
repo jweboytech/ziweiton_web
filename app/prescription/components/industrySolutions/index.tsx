@@ -110,7 +110,7 @@ const IndustrySolutions = () => {
       </div>
       <div className="pt-8.5 md:pt-17 pb-6 md:pb-11 px-2.5 md:px-48">
         <Title text={`${current?.label}行业主要问题`} />
-        <ul className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-11">
+        <ul className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-4 mt-11">
           {items.map((item, index) => (
             <li
               key={index}

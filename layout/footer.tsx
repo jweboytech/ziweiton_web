@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="px-4.5 pt-4.5 pb-3 md:py-12 md:px-30 md:gap-30 bg-black-dark text-white flex justify-between items-center md:items-start">
+    <div className="px-4.5 pt-4.5 pb-3 md:py-12 md:px-30 2xl:gap-30 lg:gap-10 bg-black-dark text-white flex justify-between items-center md:items-start">
       <div className="flex flex-col gap-3 md:gap-4">
         <Logo />
         <h2 className="hidden md:block text-3xl font-bold">专业资产管理平台</h2>

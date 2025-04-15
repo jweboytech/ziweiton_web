@@ -131,20 +131,19 @@ const ProductPage = () => {
       </div>
       <Title text="固定资产管理数智化" className="py-5 md:py-12" />
       <div className="grid-cols-2 h-[504px] hidden md:grid">
-        <div className="bg-white relative">
-          <div className="absolute left-40 top-20 z-10">
-            <h3 className="text-34 mb-10 inline-flex gap-2 items-center">
-              资产数智化平台核心解决方案
-              <Image
-                src="https://ziweiton.oss-cn-hangzhou.aliyuncs.com/slash.png"
-                alt="slash"
-                className="w-11 h-6.5"
-                width={44}
-                height={26}
-              />
-            </h3>
-            <div className="bg-gray-light w-[616px] h-[250px] bg-cover bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/prescription.webp)]" />
-          </div>
+        <div className="bg-white relative flex flex-col items-center justify-center md:px-16">
+          <h3 className="text-34 mb-10 flex gap-2 items-center">
+            资产数智化平台核心解决方案
+            <Image
+              src="https://ziweiton.oss-cn-hangzhou.aliyuncs.com/slash.png"
+              alt="slash"
+              className="w-11 h-6.5"
+              width={44}
+              height={26}
+            />
+          </h3>
+          <div className="bg-gray-light w-full h-[250px] bg-cover bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/prescription.webp)]" />
+          <div className="absolute left-40 top-20 z-10"></div>
         </div>
         <div className="bg-blue relative bg-cover bg-[url(https://ziweiton.oss-cn-hangzhou.aliyuncs.com/banner4.webp)]">
           <div className="absolute left-16 top-50">
