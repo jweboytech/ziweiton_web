@@ -23,10 +23,19 @@ const PrescriptionPage = () => {
     },
   });
 
+  function isValidPhone(phone: string) {
+    const phoneRegex = /^1[3-9]\d{9}$/;
+    return phoneRegex.test(phone);
+  }
+
   const submitForm = (values) => {
-    console.log(values);
     if (!values.name || !values.phone) {
       toast.error("请填写完整信息");
+      return;
+    }
+
+    if (!isValidPhone(values.phone)) {
+      toast.error("请填写正确的手机号");
       return;
     }
 
